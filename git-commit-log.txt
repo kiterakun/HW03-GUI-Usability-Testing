@@ -1,0 +1,151 @@
+﻿================================================================================
+GIT LOG (git log --reverse --pretty=fuller)
+================================================================================
+
+ commit cada20c5a786348e60cb50aea9db7d7eeefb82eb Author: 23120341 <23120341@student.hcmus.edu.vn> Date:   2026-11-12 20:55:43 +0700      init commit   commit aaa5d479d805ff7da2db5d14dcbc00a2bef4d0e7 Author: 23120341 <23120341@student.hcmus.edu.vn> Date:   2026-11-12 21:26:22 +0700      docs(task1): chot pham vi kiem thu GUI cho phan he Web Admin EShop          - 5 man hinh / luong: Admin Login, Dashboard, Danh muc, San pham (CRUD), Import CSV     - Tieu chuan: 4 Interface Aspects (IA-01 -> IA-04)     - Ghi nhan mau thuan mat khau admin giua README.md va setup_guide.md     - Ghi nhan 3 man hinh ngoai pham vi (Ma Giam Gia, Don hang, Nguoi dung)   commit b50a71a3d210981a5d9fdee465f879a816ea1200 Author: 23120341 <23120341@student.hcmus.edu.vn> Date:   2026-11-12 21:26:22 +0700      docs(task1): phan tich giao dien Web Admin tu source code va runtime          - Doc 922 dong src/App.jsx: 1 component, state activeTab, khong co routing     - Khao sat runtime bang Chrome DevTools Protocol:       * do WCAG contrast ratio (placeholder 2.35:1, nut Sua 1.92:1, nut Xoa 3.76:1)       * dem <label>/<h1>/aria/landmark (deu = 0)       * do chuoi diem dung focus khi Tab (0/7 muc menu)       * mo phong viewport 375px/768px (cot KPI con 19.5px)       * kiem tra prefers-color-scheme: dark va dir=rtl       * parse CSV that (quoted.csv, invalid.csv) de quan sat hanh vi import   commit 7494db3ae73d843be61d7a9c552e19fbaaf799d6 Author: 23120341 <23120341@student.hcmus.edu.vn> Date:   2026-11-12 21:26:22 +0700      feat(task1): checklist GUI 47 muc theo 4 interface aspects          - IA-01 General UI (13) | IA-02 Forms (12) | IA-03 Navigation (9) | IA-04 Feedback/State (13)     - Moi muc: ID, tieu chi kiem chung kha quan, ket qua mong doi, cach kiem chung, muc do     - Vong review v1 (67 muc) -> v2 (77 muc, AI tu bo sung 10 muc kem ma ly do 'AI bo sot')       -> v3 (47 muc) theo yeu cau nguoi hoc: bo FR-21..24, rut gon 8 nhom muc trung lap   commit df34dfb512a75745b25ebb649bc75c5cfd0f656c Author: 23120341 <23120341@student.hcmus.edu.vn> Date:   2026-11-12 21:26:23 +0700      test(task1): thuc thi checklist tren SUT that - 47/47 muc, 40 failed          - 7 Passed / 40 Failed (pass rate 14.9%), 0 muc bo qua     - IA-04 fail 100% (13/13) - khong co loading / empty state / success toast / inline error     - 55 anh bang chung cho 40 muc Failed, tat ca da overlay 23120341@student.hcmus.edu.vn     - Moi muc Failed deu co ghi chu kem so do dinh luong (contrast ratio, so phan tu DOM, pixel)   commit 4fa5c65c90bd6cd8f1ca0056fe993533cc890710 Author: 23120341 <23120341@student.hcmus.edu.vn> Date:   2026-11-12 21:26:23 +0700      docs(task1): phan tich ket qua va phan loai bug theo nguyen nhan goc          - Phan bo theo IA / man hinh / muc do; 40/40 muc Failed co bang chung anh     - Phan tich 9 nhom nguyen nhan goc: RC-IMP 60%, RC-FEAT 10%, RC-VIS 7.5%, RC-A11Y 7.5%...     - Phan loai trung thuc: 21 Bug + 2 van de kha dung + 5 de xuat cai tien (khong mo Issue)     - 7 muc PASS co 1 muc (GUI-IA03-003) pass YEU do thieu routing -> phai test lai sau khi sua BUG-008   commit 2972856bb67feb8495d15d708cc95e39223852e3 Author: 23120341 <23120341@student.hcmus.edu.vn> Date:   2026-11-12 21:26:23 +0700      fix(task1): 21 bug report chuan hoa kem anh bang chung          - Moi bug: ID, muc do, mo ta, buoc tai hien, actual vs expected, anh, tac dong nguoi dung,       ghi chu ky thuat, va khoi 'Noi dung san sang post len GitHub Issues'     - 10 Blocker + 11 Major; gom 40 muc Failed theo nguyen nhan goc     - File dinh dang: gui-testing-outputs/bugs/BUG-001.md ... BUG-021.md   commit 902b8ceeebf215b13aa337165eb75044bfab5ad1 Author: 23120341 <23120341@student.hcmus.edu.vn> Date:   2026-11-12 21:26:23 +0700      docs(task1): bao cao tong hop GUI testing va README tu danh giá          - Bao cao 13 muc: tong quan, pham vi, phuong phap, ket qua, nguyen nhan goc, danh sach bug,       phan biet bug/usability/cai tien, cross-browser (ghi trong co chu dich),       han che, de xuat cai tien, phu luc     - README.md: bang tu danh giia HW03 §15 + test summary theo §14     - Cong bo AI: OpenCode + MiniMax M3.1 Flash Free; ranh gioi AI khong danh dau Pass/Fail   commit d7a097d1fb06ae796dc7f74abbc6add9f445544b Author: 23120341 <23120341@student.hcmus.edu.vn> Date:   2026-11-12 21:26:23 +0700      chore(task1): ban Excel checklist, file CSV mau va quan ly tien do          - assets/checklist-gui-testing.xlsx: 3 sheet (Checklist 47x10, Test Summary, Bug List 21)     - 4 file CSV mau de tai hien loi Import CSV (invalid/quoted/vietnamese/sanpham.txt)     - PROGRESS.md: trang thai 7 buoc workflow va danh sach tai lieu con thieu
+
+================================================================================
+TOM TAT (commit | author | date | subject)
+================================================================================
+
+cada20c|23120341|2026-11-12|init commit aaa5d47|23120341|2026-11-12|docs(task1): chot pham vi kiem thu GUI cho phan he Web Admin EShop b50a71a|23120341|2026-11-12|docs(task1): phan tich giao dien Web Admin tu source code va runtime 7494db3|23120341|2026-11-12|feat(task1): checklist GUI 47 muc theo 4 interface aspects df34dfb|23120341|2026-11-12|test(task1): thuc thi checklist tren SUT that - 47/47 muc, 40 failed 4fa5c65|23120341|2026-11-12|docs(task1): phan tich ket qua va phan loai bug theo nguyen nhan goc 2972856|23120341|2026-11-12|fix(task1): 21 bug report chuan hoa kem anh bang chung 902b8ce|23120341|2026-11-12|docs(task1): bao cao tong hop GUI testing va README tu danh giá d7a097d|23120341|2026-11-12|chore(task1): ban Excel checklist, file CSV mau va quan ly tien do
+
+================================================================================
+THONG KE FILE THEO COMMIT
+================================================================================
+
+--- aaa5d47 ---
+aaa5d47 docs(task1): chot pham vi kiem thu GUI cho phan he Web Admin EShop
+A	gui-testing-outputs/01-scope-analysis.md
+
+--- b50a71a ---
+b50a71a docs(task1): phan tich giao dien Web Admin tu source code va runtime
+A	gui-testing-outputs/02-ui-analysis.md
+
+--- 7494db3 ---
+7494db3 feat(task1): checklist GUI 47 muc theo 4 interface aspects
+A	gui-testing-outputs/03-gui-checklist.md
+A	gui-testing-outputs/04-checklist-review.md
+
+--- df34dfb ---
+df34dfb test(task1): thuc thi checklist tren SUT that - 47/47 muc, 40 failed
+M	gui-testing-outputs/03-gui-checklist.md
+A	gui-testing-outputs/screenshots/GUI-IA01-001.png
+A	gui-testing-outputs/screenshots/GUI-IA01-002.png
+A	gui-testing-outputs/screenshots/GUI-IA01-003.png
+A	gui-testing-outputs/screenshots/GUI-IA01-004.png
+A	gui-testing-outputs/screenshots/GUI-IA01-005.png
+A	gui-testing-outputs/screenshots/GUI-IA01-006.png
+A	gui-testing-outputs/screenshots/GUI-IA01-007.png
+A	gui-testing-outputs/screenshots/GUI-IA01-008.png
+A	gui-testing-outputs/screenshots/GUI-IA01-009-375.png
+A	gui-testing-outputs/screenshots/GUI-IA01-009-768.png
+A	gui-testing-outputs/screenshots/GUI-IA01-010.png
+A	gui-testing-outputs/screenshots/GUI-IA01-011.png
+A	gui-testing-outputs/screenshots/GUI-IA01-012.png
+A	gui-testing-outputs/screenshots/GUI-IA01-013.png
+A	gui-testing-outputs/screenshots/GUI-IA02-001.png
+A	gui-testing-outputs/screenshots/GUI-IA02-002.png
+A	gui-testing-outputs/screenshots/GUI-IA02-003.png
+A	gui-testing-outputs/screenshots/GUI-IA02-004.png
+A	gui-testing-outputs/screenshots/GUI-IA02-005.png
+A	gui-testing-outputs/screenshots/GUI-IA02-006.png
+A	gui-testing-outputs/screenshots/GUI-IA02-007.png
+A	gui-testing-outputs/screenshots/GUI-IA02-008.png
+A	gui-testing-outputs/screenshots/GUI-IA02-009.png
+A	gui-testing-outputs/screenshots/GUI-IA02-010-empty.png
+A	gui-testing-outputs/screenshots/GUI-IA02-010-header.png
+A	gui-testing-outputs/screenshots/GUI-IA02-010-txt.png
+A	gui-testing-outputs/screenshots/GUI-IA02-011.png
+A	gui-testing-outputs/screenshots/GUI-IA02-012.png
+A	gui-testing-outputs/screenshots/GUI-IA03-001-deeplink.png
+A	gui-testing-outputs/screenshots/GUI-IA03-001.png
+A	gui-testing-outputs/screenshots/GUI-IA03-002.png
+A	gui-testing-outputs/screenshots/GUI-IA03-003.png
+A	gui-testing-outputs/screenshots/GUI-IA03-004.png
+A	gui-testing-outputs/screenshots/GUI-IA03-005.png
+A	gui-testing-outputs/screenshots/GUI-IA03-006-cancel.png
+A	gui-testing-outputs/screenshots/GUI-IA03-006.png
+A	gui-testing-outputs/screenshots/GUI-IA03-007.png
+A	gui-testing-outputs/screenshots/GUI-IA03-008.png
+A	gui-testing-outputs/screenshots/GUI-IA03-009.png
+A	gui-testing-outputs/screenshots/GUI-IA04-001-network.png
+A	gui-testing-outputs/screenshots/GUI-IA04-001.png
+A	gui-testing-outputs/screenshots/GUI-IA04-002.png
+A	gui-testing-outputs/screenshots/GUI-IA04-003.png
+A	gui-testing-outputs/screenshots/GUI-IA04-004.png
+A	gui-testing-outputs/screenshots/GUI-IA04-005.png
+A	gui-testing-outputs/screenshots/GUI-IA04-006-products.png
+A	gui-testing-outputs/screenshots/GUI-IA04-006.png
+A	gui-testing-outputs/screenshots/GUI-IA04-007-load.png
+A	gui-testing-outputs/screenshots/GUI-IA04-007.png
+A	gui-testing-outputs/screenshots/GUI-IA04-008.png
+A	gui-testing-outputs/screenshots/GUI-IA04-009.png
+A	gui-testing-outputs/screenshots/GUI-IA04-010.png
+A	gui-testing-outputs/screenshots/GUI-IA04-011.png
+A	gui-testing-outputs/screenshots/GUI-IA04-012.png
+A	gui-testing-outputs/screenshots/GUI-IA04-013.png
+A	"gui-testing-outputs/screenshots/ref-danh-m\341\273\245c.png"
+A	gui-testing-outputs/screenshots/ref-dashboard.png
+A	"gui-testing-outputs/screenshots/ref-m\303\243-gi\341\272\243m-gi\303\241.png"
+A	"gui-testing-outputs/screenshots/ref-ng\306\260\341\273\235i-d\303\271ng.png"
+A	gui-testing-outputs/screenshots/ref-san-pham-375px.png
+A	"gui-testing-outputs/screenshots/ref-s\341\272\243n-ph\341\272\251m.png"
+A	"gui-testing-outputs/screenshots/ref-\304\221\306\241n-h\303\240ng.png"
+
+--- 4fa5c65 ---
+4fa5c65 docs(task1): phan tich ket qua va phan loai bug theo nguyen nhan goc
+A	gui-testing-outputs/05-test-results.md
+
+--- 2972856 ---
+2972856 fix(task1): 21 bug report chuan hoa kem anh bang chung
+A	gui-testing-outputs/bugs/BUG-001.md
+A	gui-testing-outputs/bugs/BUG-002.md
+A	gui-testing-outputs/bugs/BUG-003.md
+A	gui-testing-outputs/bugs/BUG-004.md
+A	gui-testing-outputs/bugs/BUG-005.md
+A	gui-testing-outputs/bugs/BUG-006.md
+A	gui-testing-outputs/bugs/BUG-007.md
+A	gui-testing-outputs/bugs/BUG-008.md
+A	gui-testing-outputs/bugs/BUG-009.md
+A	gui-testing-outputs/bugs/BUG-010.md
+A	gui-testing-outputs/bugs/BUG-011.md
+A	gui-testing-outputs/bugs/BUG-012.md
+A	gui-testing-outputs/bugs/BUG-013.md
+A	gui-testing-outputs/bugs/BUG-014.md
+A	gui-testing-outputs/bugs/BUG-015.md
+A	gui-testing-outputs/bugs/BUG-016.md
+A	gui-testing-outputs/bugs/BUG-017.md
+A	gui-testing-outputs/bugs/BUG-018.md
+A	gui-testing-outputs/bugs/BUG-019.md
+A	gui-testing-outputs/bugs/BUG-020.md
+A	gui-testing-outputs/bugs/BUG-021.md
+
+--- 902b8ce ---
+902b8ce docs(task1): bao cao tong hop GUI testing va README tu danh giá
+M	README.md
+A	gui-testing-outputs/07-gui-test-report.md
+
+--- d7a097d ---
+d7a097d chore(task1): ban Excel checklist, file CSV mau va quan ly tien do
+A	gui-testing-outputs/PROGRESS.md
+A	gui-testing-outputs/assets/checklist-gui-testing.xlsx
+A	gui-testing-outputs/assets/invalid.csv
+A	gui-testing-outputs/assets/quoted.csv
+A	gui-testing-outputs/assets/sanpham.txt
+A	gui-testing-outputs/assets/vietnamese.csv
+
+================================================================================
+TONG KET
+================================================================================
+
+So commit trong bai nay (khong ke "init commit"):
+  - Task 1 - GUI Checklist : 8 commit (cac buoc #1 -> #8 o tren)
+  - Task 2 - Usability    : 0 commit (chua thuc hien)
+  - Task 3 - Cross-browser: 0 commit (chua thuc hien)
+
+Trang thai tai thoi diem tao file nay:
+  - 47/47 muc checklist da thuc thi   (7 Passed, 40 Failed, pass rate 14.9%)
+  - 55 anh bang chung, da overlay email 23120341@student.hcmus.edu.vn
+  - 21 bug report, da mo 21 GitHub Issues kem anh dinh kem
+  - Excel checklist: gui-testing-outputs/assets/checklist-gui-testing.xlsx
