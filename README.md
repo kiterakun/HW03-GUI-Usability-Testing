@@ -65,6 +65,10 @@
 HW03-GUI-Usability-Testing/
 ├── README.md                        ← file này (self-assessment + test summary)
 ├── git-commit-log.txt               ← git log dạng text (HW03 §12)
+├── ai-audit-outputs/                ← AI Audit Report (HW03 §9)
+│   ├── PROGRESS.md
+│   ├── conversation-2026-11-12-1941-kiem-thu-gui-eshop-admin.md  ← log 7 lượt (prompt/output nguyên văn)
+│   └── mistakes-2026-11-12-1941-kiem-thu-gui-eshop-admin.md      ← 8 lỗi AI đã ghi nhận
 └── gui-testing-outputs/             ← toàn bộ artifacts của Task 1
     ├── PROGRESS.md                  ← quản lý tiến độ từng bước
     ├── 01-scope-analysis.md         ← phân tích phạm vi (Gate A)
@@ -149,10 +153,25 @@ tái hiện, Actual/Expected, tác động người dùng, ghi chú kỹ thuật
 
 | Tài liệu | Trạng thái | Đường dẫn |
 |---|---|---|
-| AI Audit Report | ⏳ Chưa sinh | `ai-audit-outputs/` (skill `ai-audit`) |
+| AI Audit Report — log conversation | ✅ **Đã sinh** | [`ai-audit-outputs/conversation-2026-11-12-1941-kiem-thu-gui-eshop-admin.md`](ai-audit-outputs/conversation-2026-11-12-1941-kiem-thu-gui-eshop-admin.md) |
+| AI Audit — tóm tắt lỗi AI (8 lỗi) | ✅ **Đã sinh** | [`ai-audit-outputs/mistakes-2026-11-12-1941-kiem-thu-gui-eshop-admin.md`](ai-audit-outputs/mistakes-2026-11-12-1941-kiem-thu-gui-eshop-admin.md) |
+| Bản tổng hợp chế độ 2 | ⏳ Chưa sinh | `ai-audit-outputs/ai-audit-summary.md` |
 | AI Critique (200–300 từ) | ⏳ Chưa sinh | `ai-audit-outputs/ai-critique.md` |
 | Báo cáo GUI (Markdown) | ✅ | `gui-testing-outputs/07-gui-test-report.md` |
 | Báo cáo GUI (PDF) | ⏳ Chưa xuất | — |
+
+**8 lỗi AI đã ghi nhận trong phiên làm việc** (tóm tắt đầy đủ trong file trên):
+
+| Mã | Lỗi | Hậu quả |
+|---|---|---|
+| `M3` | Sinh 77 mục checklist dư thừa | Phải làm lại 3 phiên bản (v1 67 → v2 77 → v3 47), mất ~90 phút |
+| `M2` | Self-check "0 mục trùng" kiểm tra **sai trục** (so *(tiêu chí + màn hình)* thay vì *(tiêu chí + khuyết điệt)*) | Script báo xanh nhưng sự trùng lặt vẫn lọt qua |
+| `M8` | Script ghi ảnh bổ sung sai chỉ số cột | 7 dòng checklist hỏng → phải viết script sửa riêng |
+| `M8` | Dùng `require('./database')` kiểm tra dữ liệu mà file này chạy `DROP TABLE` + seed | **Xoá mất dữ liệu test** (4 đơn hàng, ~65 sản phẩm, các danh mục "QA") |
+| `M6` | Viết bảng tổng hợp số liệu bằng tay | Sai số ở 3 bảng, chỉ phát hiện khi chạy script đối chiếu |
+| `M1` | Tự đặt tiêu chí "tên danh mục trùng phải bị từ chối" trong khi đặc tả không yêu cầu | Mục có kỳ vọng bịa ra → phải bỏ ở v3 |
+| `M2` | Không hỏi repo private/public trước khi tạo Issue | Ảnh raw URL không hiển thị → phải sửa cả 21 issue |
+| `M6` | `gh issue create --label` với cờ lặp chỉ áp dụng 1 nhãn | Phải chạy lại cho cả 21 issue |
 
 **Khai báo AI (HW03 §9):** bài này **có** sử dụng AI.
 **Công cụ:** OpenCode (agent harness) + **MiniMax M3.1 Flash Free**.
