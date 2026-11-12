@@ -1,0 +1,3 @@
+name,price,description,imageUrl,category_id
+"Sản phẩm, loại A",100000,"Mô tả có, dấu phẩy",https://placehold.co/300,1
+Sản phẩm B,200000,Mô tả B,https://placehold.co/300,2

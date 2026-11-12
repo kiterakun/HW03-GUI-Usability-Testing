@@ -1,0 +1,2 @@
+name,price,description,imageUrl,category_id
+Tên SP,100000,Mô tả,https://placehold.co/300,1
