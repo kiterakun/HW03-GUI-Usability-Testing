@@ -73,6 +73,7 @@ HW03-GUI-Usability-Testing/
     ├── 04-checklist-review.md       ← review AI (v1→v2→v3) + lý do AI bỏ sót
     ├── 05-test-results.md           ← kết quả & phân tích nguyên nhân gốc
     ├── 07-gui-test-report.md        ← báo cáo GUI Testing tổng hợp
+    ├── issue-urls.txt               ← ánh xạ BUG-0xx → GitHub Issue URL
     ├── bugs/                        ← 21 bug report chuẩn (BUG-001 … BUG-021)
     ├── screenshots/                 ← 62 ảnh (55 ảnh bằng chứng đã overlay email + 7 ảnh tham chiếu)
     └── assets/
@@ -83,13 +84,40 @@ HW03-GUI-Usability-Testing/
         └── vietnamese.csv
 ```
 
+### 3.1 Quy trình commit (HW03 §12)
+
+Mỗi bước của quy trình kiểm thử có **một commit riêng**:
+
+| # | Commit | Nội dung |
+|---|---|---|
+| 1 | `aaa5d47` | `docs(task1): chot pham vi kiem thu GUI cho phan he Web Admin EShop` |
+| 2 | `b50a71a` | `docs(task1): phan tich giao dien Web Admin tu source code va runtime` |
+| 3 | `7494db3` | `feat(task1): checklist GUI 47 muc theo 4 interface aspects` *(bản thiết kế — cột kết quả để trống)* |
+| 4 | `df34dfb` | `test(task1): thuc thi checklist tren SUT that - 47/47 muc, 40 failed` *(bản đã điền kết quả + 62 ảnh)* |
+| 5 | `4fa5c65` | `docs(task1): phan tich ket qua va phan loai bug theo nguyen nhan goc` |
+| 6 | `2972856` | `fix(task1): 21 bug report chuan hoa kem anh bang chung` |
+| 7 | `902b8ce` | `docs(task1): bao cao tong hop GUI testing va README tu danh giá` |
+| 8 | `d7a097d` | `chore(task1): ban Excel checklist, file CSV mau va quan ly tien do` |
+| 9 | `474e7a7` | `docs(task1): them file git commit log dang text theo yeu cau HW03 §12` |
+
+Toàn bộ log ở dạng text: [`git-commit-log.txt`](git-commit-log.txt).
+
+> ⚠️ **Repo đang để Private.** Ảnh trong GitHub Issues được tham chiếu bằng URL `raw.githubusercontent.com`
+> — người xem cần **đăng nhập và có quyền truy cập repo** thì ảnh mới hiển thị. Nếu muốn ảnh hiển thị
+> với mọi người (ví dụ giảng viên chưa được thêm làm collaborator), cần chuyển repo sang **Public**
+> trong `Settings → General → Danger Zone`, hoặc thêm giảng viên/TAs làm collaborator.
+> Trong mỗi issue cũng có mục *"Truy cập ảnh khi không hiển thị"* kèm đường dẫn tương đối trong repo
+> để mở trực tiếp từ cây thư mục.
+
 ---
 
 ## 4. Bug report
 
 21 bug đã được báo trên [GitHub Issues](https://github.com/kiterakun/HW03-GUI-Usability-Testing/issues)
-kèm ảnh đính kèm. Chi tiết đầy đủ (mô tả, bước tái hiện, Actual/Expected, tác động người dùng, ghi
-chú kỹ thuật) nằm trong [`gui-testing-outputs/bugs/`](gui-testing-outputs/bugs/).
+kèm ảnh đính kèm. Ánh xạ BUG → Issue URL nằm ở
+[`gui-testing-outputs/issue-urls.txt`](gui-testing-outputs/issue-urls.txt). Chi tiết đầy đủ (mô tả, bước
+tái hiện, Actual/Expected, tác động người dùng, ghi chú kỹ thuật) nằm trong
+[`gui-testing-outputs/bugs/`](gui-testing-outputs/bugs/).
 
 | ID | Tiêu đề | Mức độ |
 |---|---|---|
