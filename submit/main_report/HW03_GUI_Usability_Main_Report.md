@@ -405,12 +405,12 @@ Trong quá trình rà soát và thực thi, **người dùng bổ sung các mụ
 |---|---|---|---|---|---|---|
 | `GUI-IA01-001` | Admin Login | Tương phản giữa màu chữ placeholder và nền ô nhập ≥ 4.5:1 | Contrast ≥ 4.5:1 (giá trị đo sẵn ở runtime: **2.35:1** → hiện đang FAIL) | Major | **Failed** | Màu placeholder rgb(156,163,175) trên nền ô nhập rgb(246,246,246) → tương phản đo được 2.35:1, thấp hơn ngưỡng 4.5:1. Chữ placeholder gần như chìm vào nền ô nhập. |
 | `GUI-IA01-002` | Admin Login | Cả ô Email, ô Password và nút Login đều hiện viền focus rõ ràng khi nhấn `Tab` | Mỗi phần tử có viền focus nhìn thấy được (độ dày ≥ 2px hoặc đổi màu nền rõ) | Major | **Failed** | Cả 3 phần tử đều nhận focus khi Tab, nhưng tín hiệu focus chỉ là outline mặc định của trình duyệt (outline 1px auto, box-shadow: none), không có viền ≥ 2px hay đổi màu nền rõ ràng. |
-| `GUI-IA01-003` | Admin Login | Cấu trúc tài liệu của trang đúng chuẩn: đúng **một** thẻ `<h1>` mô tả trang, `<html lang="vi">`, và `<title>` phản ánh tên sản phẩm (không phải `frontend-admin`) | `h1` = 1; `lang` = `vi`; `title` chứa tên sản phẩm | Major | **Failed** | Trang Login không có thẻ <h1> nào (đo được 0, tiêu đề dùng <h2>); html lang="en" thay vì "vi"; <title> là "frontend-admin" thay vì tên sản phẩm. |
+| `GUI-IA01-003` | Admin Login | Cấu trúc tài liệu của trang đúng chuẩn: đúng **một** thẻ `<h1>` mô tả trang, `<html lang="vi">`, và `<title>` phản ánh tên sản phẩm (không phải `frontend-admin`) | `h1` = 1; `lang` = `vi`; `title` chứa tên sản phẩm | Major | **Failed** | Trang Login không có thẻ &lt;h1> nào (đo được 0, tiêu đề dùng &lt;h2>); html lang="en" thay vì "vi"; &lt;title> là "frontend-admin" thay vì tên sản phẩm. |
 | `GUI-IA01-004` | Admin Login | 100% chuỗi hiển thị trên trang bằng tiếng Việt | Không còn chuỗi tiếng Anh nào (ví dụ "Admin Login", "Login", "Email", "Password"); ghi rõ chuỗi tiếng Anh còn lại nếu có | Major | **Failed** | Còn nhiều chuỗi tiếng Anh trên form Login: tiêu đề "Admin Login", placeholder "Email" và "Password", nút "Login". 100% chuỗi hiển thị bằng tiếng Việt không đạt. |
-| `GUI-IA01-005` | Khung chung – Sidebar | Sidebar là một landmark điều hướng (`nav`), và cả 7 mục menu (Dashboard, Danh mục, Sản phẩm, Mã Giảm Giá, Đơn hàng, Người dùng, Đăng xuất) đều nhận focus bằng `Tab` và kích hoạt được bằng `Enter` | Có landmark `nav`; mỗi mục dừng focus được và kích hoạt được; không mục nào phải dùng chuột | Blocker | **Failed** | Không có landmark điều hướng: document.querySelectorAll('nav').length = 0. 7 mục menu là thẻ <li> không có tabindex (tabIndex = -1) nên không dừng focus khi Tab (0/7 mục) và không kích hoạt được bằng Enter. Chuỗi điểm dừng thực tế: INPUT(Tên danh mục mới) → BUTTON → BUTTON → BUTTON → BUTTON → BODY. |
+| `GUI-IA01-005` | Khung chung – Sidebar | Sidebar là một landmark điều hướng (`nav`), và cả 7 mục menu (Dashboard, Danh mục, Sản phẩm, Mã Giảm Giá, Đơn hàng, Người dùng, Đăng xuất) đều nhận focus bằng `Tab` và kích hoạt được bằng `Enter` | Có landmark `nav`; mỗi mục dừng focus được và kích hoạt được; không mục nào phải dùng chuột | Blocker | **Failed** | Không có landmark điều hướng: document.querySelectorAll('nav').length = 0. 7 mục menu là thẻ &lt;li> không có tabindex (tabIndex = -1) nên không dừng focus khi Tab (0/7 mục) và không kích hoạt được bằng Enter. Chuỗi điểm dừng thực tế: INPUT(Tên danh mục mới) → BUTTON → BUTTON → BUTTON → BUTTON → BODY. |
 | `GUI-IA01-006` | Khung chung – Sidebar | Mục menu đang active được phân biệt bằng **ít nhất 2 tín hiệu khác màu chữ** (ví dụ đậm, gạch chân, hoặc thuộc tính `aria-current`) | Mục active có ≥ 2 tín hiệu khác màu; mục không active không có tín hiệu nào | Major | **Failed** | Mục active chỉ khác mục thường bằng 1 tín hiệu màu chữ (rgb(147,197,253) so với rgb(255,255,255)); font-weight giống nhau (400), không gạch chân, không nền khác, không có thuộc tính aria-current (số phần tử = 0). |
 | `GUI-IA01-007` | Khung chung – Sidebar | Khi đặt `dir="rtl"` lên `<html>`, không có phần tử nào chồng lấn, tràn ngang khung hoặc bị cắt chữ trong sidebar và bảng | Không chồng lấn, không tràn ngang, không cắt chữ | Minor | **Passed** | — |
-| `GUI-IA01-008` | Khung chung – Sidebar | Khi trình duyệt ở chế độ tối (`prefers-color-scheme: dark`), mọi chữ trên sidebar và vùng nội dung vẫn đạt tương phản ≥ 4.5:1 (không có chữ đen trên nền tối) | Không có chữ/nền nào tương phản < 4.5:1; ghi nhận nếu ứng dụng chỉ hỗ trợ giao diện sáng | Minor | **Failed** | Ứng dụng không hỗ trợ giao diện tối: khi emulate prefers-color-scheme: dark, mọi màu giữ nguyên như chế độ sáng (nền sidebar rgb(31,41,55), chữ trắng). Tương phản đo được ở chế độ tối vẫn có nhiều mục dưới 4.5:1 (nút Sửa 1.92:1, nút Xóa 3.76:1, nút Lưu sản phẩm 3.30:1, giá trị KPI 3.30:1). |
+| `GUI-IA01-008` | Khung chung – Sidebar | Khi trình duyệt ở chế độ tối (`prefers-color-scheme: dark`), mọi chữ trên sidebar và vùng nội dung vẫn đạt tương phản ≥ 4.5:1 (không có chữ đen trên nền tối) | Không có chữ/nền nào tương phản &lt; 4.5:1; ghi nhận nếu ứng dụng chỉ hỗ trợ giao diện sáng | Minor | **Failed** | Ứng dụng không hỗ trợ giao diện tối: khi emulate prefers-color-scheme: dark, mọi màu giữ nguyên như chế độ sáng (nền sidebar rgb(31,41,55), chữ trắng). Tương phản đo được ở chế độ tối vẫn có nhiều mục dưới 4.5:1 (nút Sửa 1.92:1, nút Xóa 3.76:1, nút Lưu sản phẩm 3.30:1, giá trị KPI 3.30:1). |
 | `GUI-IA01-009` | Dashboard Admin | Lưới 2 cột KPI giữ được chiều rộng đọc được ở viewport 375px và 768px (mỗi cột ≥ 150px) | Ở 375px và 768px, mỗi cột KPI rộng ≥ 150px và nội dung không bị bóp méo | Major | **Failed** | Ở 375px: gridTemplateColumns = "19.5px 19.5px" → mỗi cột KPI chỉ 19.5px (yêu cầu ≥ 150px), nội dung bị bóp méo. Ở 768px: "216px 216px" (đạt), nhưng lưới cố định 2 cột không có breakpoint responsive nào. |
 | `GUI-IA01-010` | Quản lý Sản phẩm | Ô "Giá" trong bảng hiển thị giá có dấu phân cách hàng nghìn và ký hiệu `₫` (ví dụ `30,000,000 ₫`) | Mọi dòng đều có dấu `,` phân cách hàng nghìn và đuôi ` ₫` (giá trị đo sẵn: `30000000 ₫` → hiện đang FAIL) | Major | **Failed** | Cột "Giá" hiển thị "30000000 ₫", "28000000 ₫", "45000000 ₫", "6000000 ₫", "4000000 ₫" — không có dấu phân cách hàng nghìn (đáng lẽ phải là "30,000,000 ₫"). |
 | `GUI-IA01-011` | Quản lý Sản phẩm | Tương phản chữ trên nền của **tất cả** nút hành động trong màn hình này ("Sửa", "Xóa", "Lưu sản phẩm") ≥ 4.5:1 | Cả ba nút đạt ≥ 4.5:1 (giá trị đo sẵn: "Sửa" **1.92:1**, "Xóa" **3.76:1**, "Lưu sản phẩm" **3.30:1** → hiện đang FAIL) | Major | **Failed** | Tương phản chữ trên nền nút đo được: Sửa 1.92:1 (trắng trên rgb(234,179,8)), Xóa 3.76:1 (trắng trên rgb(239,68,68)), Lưu sản phẩm 3.30:1 (trắng trên rgb(22,163,74)) — cả ba đều dưới 4.5:1. |
@@ -437,7 +437,7 @@ Trong quá trình rà soát và thực thi, **người dùng bổ sung các mụ
 
 | ID | Màn hình | Tiêu chí kiểm chứng | Kết quả mong đợi | Mức độ | Kết quả | Ghi chú (lý do fail) |
 |---|---|---|---|---|---|---|
-| `GUI-IA02-001` | Khung chung – Các form | Mọi ô nhập ở cả 4 form (Login: 2 ô; Danh mục: 1 ô; Sản phẩm: 4 ô + 1 select; Import CSV: 1 file input) đều có thẻ `<label>` gắn đúng qua `for`/`id`; placeholder KHÔNG được dùng làm nhãn duy nhất | Mỗi input/select/textarea có nhãn hiển thị luôn; nhãn không biến mất khi đã nhập; `document.querySelectorAll('label').length` ≥ 8 trên màn "Sản phẩm" | Blocker | **Failed** | Đếm thẻ <label> trên màn "Quản lý Sản phẩm" (gồm cả khối Import CSV): 0 thẻ cho 6 ô input/select/textarea + 1 ô chọn file — placeholder là nhãn duy nhất. Màn Login: 0 thẻ cho 2 ô. Màn Danh mục: 0 thẻ cho 1 ô. Không có cặp for/id nào. |
+| `GUI-IA02-001` | Khung chung – Các form | Mọi ô nhập ở cả 4 form (Login: 2 ô; Danh mục: 1 ô; Sản phẩm: 4 ô + 1 select; Import CSV: 1 file input) đều có thẻ `<label>` gắn đúng qua `for`/`id`; placeholder KHÔNG được dùng làm nhãn duy nhất | Mỗi input/select/textarea có nhãn hiển thị luôn; nhãn không biến mất khi đã nhập; `document.querySelectorAll('label').length` ≥ 8 trên màn "Sản phẩm" | Blocker | **Failed** | Đếm thẻ &lt;label> trên màn "Quản lý Sản phẩm" (gồm cả khối Import CSV): 0 thẻ cho 6 ô input/select/textarea + 1 ô chọn file — placeholder là nhãn duy nhất. Màn Login: 0 thẻ cho 2 ô. Màn Danh mục: 0 thẻ cho 1 ô. Không có cặp for/id nào. |
 | `GUI-IA02-002` | Khung chung – Các form | Trường bắt buộc được đánh dấu bằng ký hiệu `*` kèm quy tắc cụ thể | Mỗi trường bắt buộc có `*`; nhãn nêu rõ điều kiện (vd "bắt buộc", "tối đa 255 ký tự") | Major | **Failed** | Không có ký hiệu "*" nào trên trang (đếm được 0 ký hiệu) ở cả 4 form. Chỉ ô "Tên sản phẩm" có thuộc tính HTML required, không có thông báo kèm điều kiện/giới hạn; ô "Giá tiền" không được đánh dấu bắt buộc. |
 | `GUI-IA02-003` | Admin Login | Ô email dùng `type="email"` và trình duyệt chặn được email sai định dạng ngay, không gửi request | `input.type === 'email'`; nhập `abc` → trình duyệt báo lỗi, tab Network **không** có request `POST /api/login` | Major | **Failed** | Ô email không có type="email" mà là type="text" (đo được), nên trình duyệt không chặn: nhập "abc" rồi bấm Login vẫn gửi 1 request POST http://localhost:3000/api/login. |
 | `GUI-IA02-004` | Admin Login | Submit form rỗng bị chặn ở client: không gửi request lên server và không hiện thông báo lỗi | Tab Network không có request `POST /api/login`; không có thông báo lỗi hiện ra | Major | **Failed** | Submit form rỗng KHÔNG bị chặn ở client: vẫn gửi 1 request POST /api/login và hiện hộp thoại "Đăng nhập thất bại" thay vì thông báo lỗi cạnh form. |
@@ -472,7 +472,7 @@ Trong quá trình rà soát và thực thi, **người dùng bổ sung các mụ
 | `GUI-IA03-001` | Khung chung – Sidebar | URL thay đổi theo tab đang xem (deep-link): mỗi tab có 1 URL riêng và mở trực tiếp URL đó được vào đúng tab | Mỗi tab có URL riêng; copy URL tab rồi mở tab mới vẫn vào đúng tab (giá trị đo sẵn: **URL không đổi, luôn là `/`** → hiện đang FAIL) | Blocker | **Failed** | URL không đổi khi chuyển tab: Dashboard, Danh mục, Sản phẩm, Mã Giảm Giá, Đơn hàng, Người dùng đều giữ http://localhost:5174/. Mở trực tiếp URL sâu http://localhost:5174/san-pham (đang đã đăng nhập) → ứng dụng vẫn hiện màn "Dashboard", mục active là Dashboard, không có form Quản lý Sản phẩm. |
 | `GUI-IA03-002` | Khung chung – Sidebar | Tải lại trang (F5) giữ nguyên tab đang xem | Sau F5 vẫn ở tab đang xem trước đó | Major | **Failed** | Đang ở tab "Danh mục" thì nhấn F5 → sau khi tải lại màn hiện là "Dashboard" (mục active = Dashboard, tiêu đề "Dashboard"); vì URL không đổi nên không khôi phục được tab đang xem. |
 | `GUI-IA03-003` | Khung chung – Sidebar | Sau khi bấm "Đăng xuất", nhấn nút Back của trình duyệt KHÔNG quay lại được phần đã đăng nhập | Back không đưa người dùng vào lại vùng đã đăng nhập; nếu vào được thì phải bị chuyển về màn Login | Blocker | **Passed** | — |
-| `GUI-IA03-004` | Khung chung – Sidebar | Mỗi màn hình con hiển thị đường dẫn điều hướng (breadcrumb) hoặc tiêu đề cấp 1 cho biết đang ở đâu | Có breadcrumb bấm được, hoặc tiêu đề cấp 1 mô tả đúng màn hình đang xem | Minor | **Failed** | Không có breadcrumb ở bất kỳ màn nào (số phần tử breadcrumb = 0). Mỗi màn chỉ có <h2> mô tả đúng màn hình ("Quản lý Danh mục", "Quản lý Sản phẩm", "Dashboard") nhưng <h1> duy nhất là "EShop Admin" — tên sản phẩm, không mô tả màn hình đang xem. |
+| `GUI-IA03-004` | Khung chung – Sidebar | Mỗi màn hình con hiển thị đường dẫn điều hướng (breadcrumb) hoặc tiêu đề cấp 1 cho biết đang ở đâu | Có breadcrumb bấm được, hoặc tiêu đề cấp 1 mô tả đúng màn hình đang xem | Minor | **Failed** | Không có breadcrumb ở bất kỳ màn nào (số phần tử breadcrumb = 0). Mỗi màn chỉ có &lt;h2> mô tả đúng màn hình ("Quản lý Danh mục", "Quản lý Sản phẩm", "Dashboard") nhưng &lt;h1> duy nhất là "EShop Admin" — tên sản phẩm, không mô tả màn hình đang xem. |
 | `GUI-IA03-005` | Khung chung – Sidebar | Mở một URL không tồn tại (ví dụ `http://localhost:5174/khong-ton-tai`) sẽ hiện trang lỗi 404 hữu ích có nút quay về màn hình chính, không phải màn trắng hoặc màn trống | Có thông báo lỗi 404 + nút "Về trang chủ"/"Đăng nhập" | Minor | **Failed** | Mở http://localhost:5174/khong-ton-tai trả HTTP 200 vì Vite SPA fallback trả index.html → ứng dụng hiện màn Login bình thường, không có thông báo lỗi 404 (không khớp mẫu 404 / không tìm thấy) và không có nút quay về màn hình chính. |
 | `GUI-IA03-006` | Quản lý Sản phẩm | Bấm "Sửa" điền đúng giá trị sản phẩm đó vào form; bấm "Hủy sửa" trả form về trạng thái "Thêm sản phẩm mới" và xoá sạch dữ liệu cũ | Form đổi tiêu đề thành "Sửa sản phẩm", mọi field nhận đúng giá trị; sau khi "Hủy sửa" các field trống và tiêu đề về "Thêm sản phẩm mới" | Major | **Passed** | — |
 | `GUI-IA03-007` | Quản lý Sản phẩm | Danh sách sản phẩm có ô tìm kiếm hoặc bộ lọc (theo danh mục) hoặc phân trang | Có công cụ quản lý danh sách; không phải bảng dài không có tìm kiếm/lọc/phân trang | Major | **Failed** | Bảng sản phẩm (5 dòng seed) không có ô tìm kiếm, không có bộ lọc theo danh mục (chỉ 1 select dùng để chọn danh mục khi thêm mới) và không có phân trang — danh sách là bảng dài không có công cụ quản lý. |
@@ -553,7 +553,7 @@ Mỗi mục **Failed** đều có ít nhất một ảnh chụp màn hình minh 
 
 > **GUI-IA01-003** — Admin Login: Cấu trúc tài liệu của trang đúng chuẩn: đúng **một** thẻ `<h1>` mô tả trang, `<html lang="vi">`, và `<title>` phản ánh tên sản phẩm (không phải `frontend-admin`)
 
-> **GUI-IA01-003** · Mức độ: **Major** · Ghi chú: Trang Login không có thẻ <h1> nào (đo được 0, tiêu đề dùng <h2>); html lang="en" thay vì "vi"; <title> là "frontend-admin" thay vì tên sản phẩm.
+> **GUI-IA01-003** · Mức độ: **Major** · Ghi chú: Trang Login không có thẻ &lt;h1> nào (đo được 0, tiêu đề dùng &lt;h2>); html lang="en" thay vì "vi"; &lt;title> là "frontend-admin" thay vì tên sản phẩm.
 
 **Hình 4** — `GUI-IA01-004.png`
 
@@ -569,7 +569,7 @@ Mỗi mục **Failed** đều có ít nhất một ảnh chụp màn hình minh 
 
 > **GUI-IA01-005** — Khung chung – Sidebar: Sidebar là một landmark điều hướng (`nav`), và cả 7 mục menu (Dashboard, Danh mục, Sản phẩm, Mã Giảm Giá, Đơn hàng, Người dùng, Đăng xuất) đều nhận focus bằng `Tab` và kích hoạt được bằng `Enter`
 
-> **GUI-IA01-005** · Mức độ: **Blocker** · Ghi chú: Không có landmark điều hướng: document.querySelectorAll('nav').length = 0. 7 mục menu là thẻ <li> không có tabindex (tabIndex = -1) nên không dừng focus khi Tab (0/7 mục) và không kích hoạt được bằng Enter. Chuỗi điểm dừng thực tế: INPUT(Tên danh mục mới) → BUTTON → BUTTON → BUTTON → BUTTON → BODY.
+> **GUI-IA01-005** · Mức độ: **Blocker** · Ghi chú: Không có landmark điều hướng: document.querySelectorAll('nav').length = 0. 7 mục menu là thẻ &lt;li> không có tabindex (tabIndex = -1) nên không dừng focus khi Tab (0/7 mục) và không kích hoạt được bằng Enter. Chuỗi điểm dừng thực tế: INPUT(Tên danh mục mới) → BUTTON → BUTTON → BUTTON → BUTTON → BODY.
 
 **Hình 6** — `GUI-IA01-006.png`
 
@@ -635,7 +635,7 @@ Mỗi mục **Failed** đều có ít nhất một ảnh chụp màn hình minh 
 
 > **GUI-IA02-001** — Khung chung – Các form: Mọi ô nhập ở cả 4 form (Login: 2 ô; Danh mục: 1 ô; Sản phẩm: 4 ô + 1 select; Import CSV: 1 file input) đều có thẻ `<label>` gắn đúng qua `for`/`id`; placeholder KHÔNG được dùng làm nhãn duy nhất
 
-> **GUI-IA02-001** · Mức độ: **Blocker** · Ghi chú: Đếm thẻ <label> trên màn "Quản lý Sản phẩm" (gồm cả khối Import CSV): 0 thẻ cho 6 ô input/select/textarea + 1 ô chọn file — placeholder là nhãn duy nhất. Màn Login: 0 thẻ cho 2 ô. Màn Danh mục: 0 thẻ cho 1 ô. Không có cặp for/id nào.
+> **GUI-IA02-001** · Mức độ: **Blocker** · Ghi chú: Đếm thẻ &lt;label> trên màn "Quản lý Sản phẩm" (gồm cả khối Import CSV): 0 thẻ cho 6 ô input/select/textarea + 1 ô chọn file — placeholder là nhãn duy nhất. Màn Login: 0 thẻ cho 2 ô. Màn Danh mục: 0 thẻ cho 1 ô. Không có cặp for/id nào.
 
 **Hình 14** — `GUI-IA02-002.png`
 
@@ -765,7 +765,7 @@ Mỗi mục **Failed** đều có ít nhất một ảnh chụp màn hình minh 
 
 > **GUI-IA03-004** — Khung chung – Sidebar: Mỗi màn hình con hiển thị đường dẫn điều hướng (breadcrumb) hoặc tiêu đề cấp 1 cho biết đang ở đâu
 
-> **GUI-IA03-004** · Mức độ: **Minor** · Ghi chú: Không có breadcrumb ở bất kỳ màn nào (số phần tử breadcrumb = 0). Mỗi màn chỉ có <h2> mô tả đúng màn hình ("Quản lý Danh mục", "Quản lý Sản phẩm", "Dashboard") nhưng <h1> duy nhất là "EShop Admin" — tên sản phẩm, không mô tả màn hình đang xem.
+> **GUI-IA03-004** · Mức độ: **Minor** · Ghi chú: Không có breadcrumb ở bất kỳ màn nào (số phần tử breadcrumb = 0). Mỗi màn chỉ có &lt;h2> mô tả đúng màn hình ("Quản lý Danh mục", "Quản lý Sản phẩm", "Dashboard") nhưng &lt;h1> duy nhất là "EShop Admin" — tên sản phẩm, không mô tả màn hình đang xem.
 
 **Hình 30** — `GUI-IA03-005.png`
 
@@ -979,7 +979,7 @@ Mỗi mục **Failed** đều có ít nhất một ảnh chụp màn hình minh 
 
 > **GUI-IA03-009** — Khung chung – Sidebar: Sau khi chuyển sang tab khác, focus (điểm nhận bàn phím) được chuyển vào vùng nội dung mới thay vì đứng lại ở mục menu vừa bấm
 
-> **GUI-IA03-009** · Mức độ: **Minor** · Kết quả: **Passed** · Ghi chú: Bấm mục "Danh mục" bằng chuột rồi nhấn Tab: focus dừng ở <INPUT> placeholder="Tên danh mục mới" — nằm trong vùng nội dung mới, không đứng lại ở mục menu vừa bấm (mục <li> không nhận focus).
+> **GUI-IA03-009** · Mức độ: **Minor** · Kết quả: **Passed** · Ghi chú: Bấm mục "Danh mục" bằng chuột rồi nhấn Tab: focus dừng ở &lt;INPUT> placeholder="Tên danh mục mới" — nằm trong vùng nội dung mới, không đứng lại ở mục menu vừa bấm (mục &lt;li> không nhận focus).
 
 ### 3.7. Phân tích kết quả thực thi
 
@@ -1642,7 +1642,7 @@ Mỗi mục **Failed** đều có ít nhất một ảnh chụp màn hình minh 
 | Điểm UEQ-S | 3,99/7 (49,9%) |
 | Số phát hiện usability | 8 vấn đề hệ thống · 0 lỗi lẻ |
 | Số ảnh bằng chứng | 55 ảnh checklist + 23 ảnh GitHub Issues |
-| Số commit | 15 (xem `git-commit-log.txt`) |
+| Số commit | **21** (xem `git-commit-log.txt`) |
 
 ### 5.3. Kết luận
 
@@ -1754,24 +1754,31 @@ Repository: **https://github.com/kiterakun/HW03-GUI-Usability-Testing/issues**
 
 ### 7.5. Nhật ký Git commit
 
-HW03 §12 yêu cầu **một commit cho mỗi bước của quy trình kiểm thử**. Nhật ký đầy đủ (15 commit, từ `init commit` đến commit hiện tại) nằm ở **`git-commit-log.txt`**.
+HW03 §12 yêu cầu **một commit cho mỗi bước của quy trình kiểm thử**. Nhật ký đầy đủ (**21 commit**, từ `init commit` đến commit hiện tại) nằm ở **`git-commit-log.txt`**.
 
-| # | Commit | Nội dung |
-|---:|---|---|
-| `cada20c` | `init commit` |
-| `aaa5d47` | `chốt phạm vi kiểm thử GUI cho phân hệ Web Admin EShop` |
-| `b50a71a` | `phân tích giao diện Web Admin từ source code và runtime` |
-| `7494db3` | `checklist GUI 47 mục theo 4 interface aspects` |
-| `df34dfb` | `thực thi checklist trên SUT thật — 47/47 mục, 40 failed` |
-| `4fa5c65` | `phân tích kết quả và phân loại bug theo nguyên nhân gốc` |
-| `2972856` | `21 bug report chuẩn hoá kèm ảnh bằng chứng` |
-| `902b8ce` | `báo cáo tổng hợp GUI testing và README tự đánh giá` |
-| `d7a097d` | `bản Excel checklist, file CSV mẫu và quản lý tiến độ` |
-| `474e7a7` | `thêm file git commit log dạng text theo yêu cầu HW03 §12` |
-| `c0c7bf3` | `bổ sung chỉ mục GitHub Issues và luồng dẫn truy cập ảnh trong README` |
-| `586a910` | `them AI Audit Report va tom tat 8 loi AI cua phien lam viec` |
-| `5634049` | `docs(task2): usability testing outputs — 7 phiên, phân tích, heuristic, severity, improvements, report` |
-| `a19a2aa` | `docs: update README for Task 1 and Task 2 completion` |
+| # | Commit | Bước kiểm thử | Nội dung |
+|---:|---|---|---|
+| 1 | `cada20c` | Khởi động | Khởi tạo repository bài làm |
+| 2 | `aaa5d47` | T1 · B1 | Chốt phạm vi kiểm thử GUI cho phân hệ Web Admin EShop |
+| 3 | `b50a71a` | T1 · B2 | Phân tích giao diện Web Admin từ source code và runtime |
+| 4 | `7494db3` | T1 · B3–B4 | Thiết kế checklist GUI 47 mục theo 4 interface aspects |
+| 5 | `df34dfb` | T1 · B5 | **Thực thi checklist trên SUT thật — 47/47 mục, 40 failed** |
+| 6 | `4fa5c65` | T1 · B6a | Phân tích kết quả và phân loại bug theo nguyên nhân gốc |
+| 7 | `2972856` | T1 · B6b | Chuẩn hoá 21 bug report kèm ảnh bằng chứng |
+| 8 | `902b8ce` | T1 · B7 | Báo cáo tổng hợp GUI testing và README tự đánh giá |
+| 9 | `d7a097d` | T1 · Phụ trợ | Bản Excel checklist, file CSV mẫu và quản lý tiến độ |
+| 10 | `474e7a7` | HW03 §12 | Thêm file git commit log dạng text theo yêu cầu HW03 §12 |
+| 11 | `c0c7bf3` | T1 · Issues | Bổ sung chỉ mục GitHub Issues và luồng dẫn truy cập ảnh trong README |
+| 12 | `586a910` | HW03 §9 | Thêm AI Audit Report và tóm tắt 8 lỗi AI của phiên làm việc |
+| 13 | `5634049` | **T2** | Toàn bộ output usability testing: 7 phiên, phân tích, heuristic, severity, improvements, report |
+| 14 | `a19a2aa` | T1+T2 | Cập nhật README sau khi hoàn tất Task 1 và Task 2 |
+| 15 | `37e3c29` | **T2** | Bổ sung 7 file ghi chú phiên P01–P07 theo mẫu TEMPLATE-session-notes |
+| 16 | `2bb2643` | HW03 §14 | Thêm gói nộp Submit — báo cáo chính, bug report kèm ảnh GitHub Issues, AI audit report |
+| 17 | `1ee1b76` | HW03 §14 | Thêm bằng chứng 7 phiên usability, Excel checklist và test summary |
+| 18 | `3432bc3` | HW03 §12 | Cập nhật git commit log đầy đủ theo HW03 §12 (kèm bảng commit → bước kiểm thử) |
+| 19 | `6878dbb` | HW03 §12 | Đồng bộ bản git commit log vào gói nộp Submit |
+| 20 | `bd43944` | HW03 §12 | Đồng bộ bản git commit log mới nhất vào gói nộp và repo |
+| 21 | `ad5600d` | HW03 §14 | Hoàn tất gói nộp Submit — báo cáo chính, bug report, ai audit, bằng chứng 7 phiên, excel checklist |
 
 ### 7.6. Task 3 — Cross-browser / Cross-platform: **KHÔNG THỰC HIỆN**
 

@@ -1885,7 +1885,7 @@ biết hệ thống đang xử lý hay đã treo.
 Trong lúc request đang chạy:
 - nút Login bị **disable** để không thể bấm lại;
 - nhãn đổi thành trạng thái đang xử lý (vd "Đang đăng nhập…") kèm spinner;
-- phản hồi UI trong **< 1 giây** (đây là ngưỡng của IA-04 cho phản hồi sau click).
+- phản hồi UI trong **&lt; 1 giây** (đây là ngưỡng của IA-04 cho phản hồi sau click).
 
 Đây là yêu cầu chống **double-submit** trong IA-02 và hiển thị trạng thái đang xử lý trong IA-04.
 
@@ -2299,7 +2299,7 @@ thấy tiền tố `sm:`, `md:`, `lg:`, `xl:`. Kết quả khi thu hẹp cửa s
   **119px**.
 - Lưới 2 cột KPI (`grid-cols-2`) không có `minmax` nên tự co lại: `gridTemplateColumns` =
   **`"19.5px 19.5px"`** — mỗi thẻ KPI chỉ rộng 19,5px, nội dung bị bóp méo vô dụng.
-- Các ô nhập trong form Sản phẩm còn **18px** rộng, cỡ chữ input **14px** (< 16px → iOS tự zoom khi
+- Các ô nhập trong form Sản phẩm còn **18px** rộng, cỡ chữ input **14px** (&lt; 16px → iOS tự zoom khi
   focus).
 - Ở 768px: lưới hồi phục được (`"216px 216px"`) nhưng vẫn là 2 cột cứng.
 
