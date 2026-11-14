@@ -5,7 +5,7 @@ Sinh vien   : 23120341 — 23120341@student.hcmus.edu.vn
 Repository  : https://github.com/kiterakun/HW03-GUI-Usability-Testing
 SUT         : eshop-sut/frontend-admin @ commit 85af3ba
 Ngay        : 2026-11-12 → 2026-11-14
-Tong so commit : 22
+Tong so commit : 23
 
 HW03 §12: "Create a new Git commit for each step of the testing procedure (for example:
 checklist design, checklist execution, bug logging, each usability session, and the analysis)."
@@ -38,6 +38,7 @@ checklist design, checklist execution, bug logging, each usability session, and 
 20  bd43944    2026-11-14   23120341    docs: dong bo ban git commit log moi nhat vao goi nop va repo
 21  ad5600d    2026-11-14   23120341    docs: hoan tat goi nop Submit - bao cao chinh, bug report, ai audit, bang chung 7 phien, excel checklist
 22  f892f0c    2026-11-14   23120341    docs: dong bo lai goi nop Submit sau khi sua loi render cua bang (escape raw HTML) va them 23 anh chup trang GitHub Issues
+23  ec3b8e4    2026-11-14   23120341    docs: cap nhat lai git commit log cho khop 22 commit
 
 ====================================================================================================
 2. CHI TIET TUNG COMMIT (message day du)
@@ -240,6 +241,13 @@ Date:   2026-11-14 16:54:08 +0700
 
     docs: dong bo lai goi nop Submit sau khi sua loi render cua bang (escape raw HTML) va them 23 anh chup trang GitHub Issues
 
+----------------------------------------------------------------------------------------------------
+commit ec3b8e4a8e426c4310f0e0887923069b972c7e77
+Author: 23120341 <23120341@student.hcmus.edu.vn>
+Date:   2026-11-14 16:54:37 +0700
+
+    docs: cap nhat lai git commit log cho khop 22 commit
+
 
 ====================================================================================================
 3. COMMIT → BUOC KIEM THU (HW03 §12)
@@ -322,6 +330,9 @@ ad5600d  —
     
 
 f892f0c  —
+    
+
+ec3b8e4  —
     
 
 ====================================================================================================
@@ -533,15 +544,20 @@ A	tools/capture-issues.js
 A	tools/md2pdf.py
 A	tools/mdutil.py
 
+--- ec3b8e4 ---
+ec3b8e4 docs: cap nhat lai git commit log cho khop 22 commit
+M	git-commit-log.txt
+M	submit/git-commit-log.txt
+
 ====================================================================================================
 5. TOM TAT
 ====================================================================================================
 
-Tong so commit              : 22
+Tong so commit              : 23
 Commit cho moi buoc kiem thu: co (xem muc 3)
 Task 1 (GUI Checklist)      : 13 commit
 Task 2 (Usability)          :  4 commit (+ 2 commit goi nop)
-Tai lieu dinh kem           : 278 file
+Tai lieu dinh kem           : 280 file
 
 ====================================================================================================
 END OF GIT COMMIT LOG
