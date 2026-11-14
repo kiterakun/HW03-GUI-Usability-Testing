@@ -5,7 +5,7 @@ Sinh vien   : 23120341 — 23120341@student.hcmus.edu.vn
 Repository  : https://github.com/kiterakun/HW03-GUI-Usability-Testing
 SUT         : eshop-sut/frontend-admin @ commit 85af3ba
 Ngay        : 2026-11-12 → 2026-11-14
-Tong so commit : 21
+Tong so commit : 22
 
 HW03 §12: "Create a new Git commit for each step of the testing procedure (for example:
 checklist design, checklist execution, bug logging, each usability session, and the analysis)."
@@ -37,6 +37,7 @@ checklist design, checklist execution, bug logging, each usability session, and 
 19  6878dbb    2026-11-14   23120341    docs: dong bo ban git commit log vao goi nop Submit
 20  bd43944    2026-11-14   23120341    docs: dong bo ban git commit log moi nhat vao goi nop va repo
 21  ad5600d    2026-11-14   23120341    docs: hoan tat goi nop Submit - bao cao chinh, bug report, ai audit, bang chung 7 phien, excel checklist
+22  f892f0c    2026-11-14   23120341    docs: dong bo lai goi nop Submit sau khi sua loi render cua bang (escape raw HTML) va them 23 anh chup trang GitHub Issues
 
 ====================================================================================================
 2. CHI TIET TUNG COMMIT (message day du)
@@ -232,6 +233,13 @@ Date:   2026-11-14 16:41:38 +0700
 
     docs: hoan tat goi nop Submit - bao cao chinh, bug report, ai audit, bang chung 7 phien, excel checklist
 
+----------------------------------------------------------------------------------------------------
+commit f892f0ca9b41dd2676272efcead9d93513a38358
+Author: 23120341 <23120341@student.hcmus.edu.vn>
+Date:   2026-11-14 16:54:08 +0700
+
+    docs: dong bo lai goi nop Submit sau khi sua loi render cua bang (escape raw HTML) va them 23 anh chup trang GitHub Issues
+
 
 ====================================================================================================
 3. COMMIT → BUOC KIEM THU (HW03 §12)
@@ -311,6 +319,9 @@ bd43944  —
     
 
 ad5600d  —
+    
+
+f892f0c  —
     
 
 ====================================================================================================
@@ -508,15 +519,29 @@ ad5600d docs: hoan tat goi nop Submit - bao cao chinh, bug report, ai audit, ban
 M	git-commit-log.txt
 M	submit/git-commit-log.txt
 
+--- f892f0c ---
+f892f0c docs: dong bo lai goi nop Submit sau khi sua loi render cua bang (escape raw HTML) va them 23 anh chup trang GitHub Issues
+M	submit/README.md
+M	submit/ai_audit_report/HW03_AI_Audit_Report.pdf
+M	submit/ai_audit_report/HW03_AI_Critique.pdf
+M	submit/bug_report/HW03_Bug_Report.md
+M	submit/checklist/test-summary.md
+M	submit/git-commit-log.txt
+M	submit/main_report/HW03_GUI_Usability_Main_Report.md
+M	submit/main_report/HW03_GUI_Usability_Main_Report.pdf
+A	tools/capture-issues.js
+A	tools/md2pdf.py
+A	tools/mdutil.py
+
 ====================================================================================================
 5. TOM TAT
 ====================================================================================================
 
-Tong so commit              : 21
+Tong so commit              : 22
 Commit cho moi buoc kiem thu: co (xem muc 3)
 Task 1 (GUI Checklist)      : 13 commit
 Task 2 (Usability)          :  4 commit (+ 2 commit goi nop)
-Tai lieu dinh kem           : 267 file
+Tai lieu dinh kem           : 278 file
 
 ====================================================================================================
 END OF GIT COMMIT LOG
