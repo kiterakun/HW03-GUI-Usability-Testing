@@ -123,13 +123,13 @@
 
 | # | Mô tả trung tính (không diễn giải) | Trích dẫn | Số lần xảy ra | Mức độ (1–3) | Mốc thời gian | Task |
 |---|---|---|---|---|---|---|
-| F1 | Không có chức năng Sửa danh mục — người tham gia đối chiếu với các sàn khác. | “Không có nút Sửa. Ở mấy sàn tôi dùng thì có.” | 3 | 3 | 07:40–09:50 | T2 |
-| F2 | Xóa không có hộp thoại xác nhận. | “Xóa không hỏi lại. Ở chỗ tôi làm việc, xóa là phải có hộp thoại.” | 1 | 1 | 09:50 | T2 |
-| F3 | Sửa một sản phẩm làm đổi tên toàn bộ bảng. | “Sao cả bảng cùng tên? Tôi chỉ sửa một dòng thôi mà.” | 1 | 1 | 15:50 | T3 |
+| F1 | Không có chức năng Sửa danh mục — người tham gia đối chiếu với các sàn khác. | “Không có nút Sửa. Ở mấy sàn tôi dùng thì có.” | 3 | 2 | 07:40–09:50 | T2 |
+| F2 | Xóa không có hộp thoại xác nhận. | “Xóa không hỏi lại. Ở chỗ tôi làm việc, xóa là phải có hộp thoại.” | 1 | 2 | 09:50 | T2 |
+| F3 | Sửa một sản phẩm làm đổi tên toàn bộ bảng. | “Sao cả bảng cùng tên? Tôi chỉ sửa một dòng thôi mà.” | 1 | 3 | 15:50 | T3 |
 | F4 | Giá mới không hiển thị sau khi lưu. | “Giá thì… tôi không để ý, thấy báo thành công là tin.” | 1 | 1 | 16:00 | T3 |
-| F5 | Form sản phẩm thiếu `<label>` và `*`. | “Không có nhãn cố định, không có dấu *. Ô nào bắt buộc thì phải đoán.” | 1 | 1 | 13:00 | T3 |
-| F6 | Thông báo đăng nhập sai không nêu nguyên nhân. | “Báo chung chung. Lẽ ra phải nói rõ sai mật khẩu.” | 1 | 1 | 00:50 | T4 |
-| F7 | Không có thông báo xác nhận sau khi thêm danh mục. | “Thêm xong, giao diện sạch nhưng thiếu phần báo.” | 1 | 1 | 06:30 | T2 |
+| F5 | Form sản phẩm thiếu `<label>` và `*`. | “Không có nhãn cố định, không có dấu *. Ô nào bắt buộc thì phải đoán.” | 1 | 2 | 13:00 | T3 |
+| F6 | Thông báo đăng nhập sai không nêu nguyên nhân. | “Báo chung chung. Lẽ ra phải nói rõ sai mật khẩu.” | 1 | 2 | 00:50 | T4 |
+| F7 | Không có thông báo xác nhận sau khi thêm danh mục. | “Thêm xong, giao diện sạch nhưng thiếu phần báo.” | 1 | 2 | 06:30 | T2 |
 | F8 | Dashboard thiếu chú thích công thức và mốc cập nhật. | “Nếu có ghi rõ công thức và mốc cập nhật thì tôi tin hơn.” | 1 | 1 | 04:40 | T1 |
 
 ## 5. Trợ giúp / can thiệp

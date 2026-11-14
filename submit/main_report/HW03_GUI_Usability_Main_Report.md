@@ -1152,7 +1152,7 @@ Mỗi mục **Failed** đều có ít nhất một ảnh chụp màn hình minh 
 | P06 | Ngô Thị Kim Liên | kimngo***@gmail.com | Nhân viên marketing | 25 | Dùng EShop admin vài ngày | Chrome | 2026-11-13 |
 | P07 | Trần Thanh Hưng | tranthanh***@gmail.com | Chủ cửa hàng điện tử | 41 | Quen sàn TMĐT khác | Chrome | 2026-11-13 |
 
-**Đặc tính mẫu:** 100% ngoài lớp HW03 · 100% không thuộc ngành IT/QA · 100% có kinh nghiệm quản lý sản phẩm cơ bản trên nền tảng thương mại điện tử. Bảng đầy đủ kèm văn bản đồng ý nằm tại [`usability_session_evidence/02-participants-table.md`](../usability_session_evidence/02-participants-table.md).
+**Đặc tính mẫu:** 100% ngoài lớp HW03 · 100% không thuộc ngành IT/QA · 100% có kinh nghiệm quản lý sản phẩm cơ bản trên nền tảng thương mại điện tử. Bảng đầy đủ kèm văn bản đồng ý nằm tại [`usability_session_evidence/05-participants-table.md`](../usability_session_evidence/05-participants-table.md).
 
 ### 4.3. Kịch bản nhiệm vụ
 
@@ -1642,7 +1642,7 @@ Mỗi mục **Failed** đều có ít nhất một ảnh chụp màn hình minh 
 | Điểm UEQ-S | 3,99/7 (49,9%) |
 | Số phát hiện usability | 8 vấn đề hệ thống · 0 lỗi lẻ |
 | Số ảnh bằng chứng | 55 ảnh checklist + 23 ảnh GitHub Issues |
-| Số commit | **26** (xem [`git-commit-log.txt`](../git-commit-log.txt)) |
+| Số commit | **27** (xem [`git-commit-log.txt`](../git-commit-log.txt)) |
 
 ### 5.3. Kết luận
 
@@ -1754,7 +1754,7 @@ Repository: **https://github.com/kiterakun/HW03-GUI-Usability-Testing/issues**
 
 ### 7.5. Nhật ký Git commit
 
-HW03 §12 yêu cầu **một commit cho mỗi bước của quy trình kiểm thử**. Nhật ký đầy đủ (**26 commit** tại thời điểm sinh báo cáo, từ `init commit` đến commit hiện tại) nằm ở [`git-commit-log.txt`](../git-commit-log.txt) — tệp này là bản chính xác nhất.
+HW03 §12 yêu cầu **một commit cho mỗi bước của quy trình kiểm thử**. Nhật ký đầy đủ (**27 commit** tại thời điểm sinh báo cáo, từ `init commit` đến commit hiện tại) nằm ở [`git-commit-log.txt`](../git-commit-log.txt) — tệp này là bản chính xác nhất.
 
 | # | Commit | Nội dung commit |
 |---:|---|---|
@@ -1784,6 +1784,7 @@ HW03 §12 yêu cầu **một commit cho mỗi bước của quy trình kiểm th
 | 24 | `2c9949d` | docs: hoan tat bao cao chinh (23 commit), tai lieu PDF va bang chung 7 phien usability |
 | 25 | `faff551` | docs: chuan hoa lien ket tuong doi giua cac tai lieu trong goi nop Submit |
 | 26 | `d37199d` | docs: hoan thien bao cao chinh (ban PDF) va dong bo toan bo goi nop Submit |
+| 27 | `67777f2` | docs: hoan thien bao cao chinh - bang commit tu sinh dong va lien ket chuan |
 
 ### 7.6. Task 3 — Cross-browser / Cross-platform: **KHÔNG THỰC HIỆN**
 

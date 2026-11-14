@@ -124,14 +124,14 @@
 
 | # | Mô tả trung tính (không diễn giải) | Trích dẫn | Số lần xảy ra | Mức độ (1–3) | Mốc thời gian | Task |
 |---|---|---|---|---|---|---|
-| F1 | Không có chức năng Sửa danh mục; người tham gia tìm bằng nhiều cách trước khi kết luận. | “Không có nút Sửa. Vậy là không sửa được tên.” | 4 | 3 | 08:20–11:30 | T2 |
-| F2 | Xóa không có xác nhận — người tham gia phản ứng mạnh vì từng bị mất dữ liệu trong công việc thật. | “Xóa không hỏi à? May mà tôi còn bản ghi danh mục cũ.” | 1 | 1 | 10:40 | T2 |
-| F3 | Sửa một sản phẩm đổi tên toàn bộ bảng. | “Sao 5 dòng này tên giống nhau hết vậy? Tôi chỉ sửa một dòng.” | 1 | 1 | 16:40 | T3 |
+| F1 | Không có chức năng Sửa danh mục; người tham gia tìm bằng nhiều cách trước khi kết luận. | “Không có nút Sửa. Vậy là không sửa được tên.” | 4 | 2 | 08:20–11:30 | T2 |
+| F2 | Xóa không có xác nhận — người tham gia phản ứng mạnh vì từng bị mất dữ liệu trong công việc thật. | “Xóa không hỏi à? May mà tôi còn bản ghi danh mục cũ.” | 1 | 3 | 10:40 | T2 |
+| F3 | Sửa một sản phẩm đổi tên toàn bộ bảng. | “Sao 5 dòng này tên giống nhau hết vậy? Tôi chỉ sửa một dòng.” | 1 | 3 | 16:40 | T3 |
 | F4 | Giá mới không hiển thị sau khi lưu. | “Tên đổi rồi chứ giá thì… à, tôi không để ý.” | 1 | 1 | 16:50 | T3 |
-| F5 | Không có ký hiệu trường bắt buộc; nhãn là placeholder. | “Ô này có bắt buộc không nhỉ? Không thấy dấu *.” | 1 | 1 | 14:00 | T3 |
-| F6 | Thông báo lỗi đăng nhập không nêu nguyên nhân và không hướng dẫn xử lý. | “Thông báo này không nói gì cả. Mình sai hay hệ thống sai?” | 1 | 1 | 01:20 | T4 |
-| F7 | Không có thông báo xác nhận khi thêm danh mục. | “Có rồi, nhưng không có thông báo gì. Phải tự nhìn bảng.” | 1 | 1 | 07:00 | T2 |
-| F8 | Không tìm được bảng đơn hàng để đối chiếu doanh thu. | “Không thấy chỗ nào xem đơn hàng. Tôi sẽ tạm tin con số này.” | 1 | 1 | 05:00 | T1 |
+| F5 | Không có ký hiệu trường bắt buộc; nhãn là placeholder. | “Ô này có bắt buộc không nhỉ? Không thấy dấu *.” | 1 | 2 | 14:00 | T3 |
+| F6 | Thông báo lỗi đăng nhập không nêu nguyên nhân và không hướng dẫn xử lý. | “Thông báo này không nói gì cả. Mình sai hay hệ thống sai?” | 1 | 2 | 01:20 | T4 |
+| F7 | Không có thông báo xác nhận khi thêm danh mục. | “Có rồi, nhưng không có thông báo gì. Phải tự nhìn bảng.” | 1 | 2 | 07:00 | T2 |
+| F8 | Không tìm được bảng đơn hàng để đối chiếu doanh thu. | “Không thấy chỗ nào xem đơn hàng. Tôi sẽ tạm tin con số này.” | 1 | 2 | 05:00 | T1 |
 
 ## 5. Trợ giúp / can thiệp
 

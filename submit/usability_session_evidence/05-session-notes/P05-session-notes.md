@@ -124,12 +124,12 @@
 | # | Mô tả trung tính (không diễn giải) | Trích dẫn | Số lần xảy ra | Mức độ (1–3) | Mốc thời gian | Task |
 |---|---|---|---|---|---|---|
 | F1 | Không có chức năng Sửa danh mục; người tham gia nhận ra nhanh và đề xuất workaround. | “Không có nút sửa. Tạo mới rồi xóa cũ là xong.” | 2 | 2 | 06:20–08:00 | T2 |
-| F2 | Xóa không có hộp thoại xác nhận. | “Xóa không hỏi lại. Rủi ro thật, nhưng ở đây là dữ liệu tôi vừa tạo.” | 1 | 1 | 08:00 | T2 |
-| F3 | Sửa một sản phẩm làm đổi tên toàn bộ 5 dòng. | “Tên cả 5 dòng đều đổi theo — đây là lỗi.” | 1 | 1 | 13:50 | T3 |
-| F4 | Giá mới `5990000` không hiển thị (vẫn `6000000 ₫`). | “Giá vẫn 6.000.000 chứ không phải 5.990.000 — lỗi nữa.” | 1 | 1 | 13:50 | T3 |
-| F5 | Form sản phẩm thiếu `<label>` và ký hiệu `*`. | “Không có dấu *, cũng không có nhãn cố định. Ô nào là bắt buộc thì phải đoán.” | 1 | 1 | 11:00 | T3 |
+| F2 | Xóa không có hộp thoại xác nhận. | “Xóa không hỏi lại. Rủi ro thật, nhưng ở đây là dữ liệu tôi vừa tạo.” | 1 | 2 | 08:00 | T2 |
+| F3 | Sửa một sản phẩm làm đổi tên toàn bộ 5 dòng. | “Tên cả 5 dòng đều đổi theo — đây là lỗi.” | 1 | 3 | 13:50 | T3 |
+| F4 | Giá mới `5990000` không hiển thị (vẫn `6000000 ₫`). | “Giá vẫn 6.000.000 chứ không phải 5.990.000 — lỗi nữa.” | 1 | 2 | 13:50 | T3 |
+| F5 | Form sản phẩm thiếu `<label>` và ký hiệu `*`. | “Không có dấu *, cũng không có nhãn cố định. Ô nào là bắt buộc thì phải đoán.” | 1 | 2 | 11:00 | T3 |
 | F6 | `alert()` thô khi đăng nhập sai. | “Sai mật khẩu rồi.” | 1 | 1 | 00:45 | T4 |
-| F7 | Con số doanh thu trên Dashboard bị nhân đôi — người tham gia tự nhận ra bằng tính nhẩm. | “6.400.000… chắc bị nhân đôi rồi. Tôi không có bảng đơn hàng để chắc chắn.” | 1 | 1 | 03:40 | T1 |
+| F7 | Con số doanh thu trên Dashboard bị nhân đôi — người tham gia tự nhận ra bằng tính nhẩm. | “6.400.000… chắc bị nhân đôi rồi. Tôi không có bảng đơn hàng để chắc chắn.” | 1 | 2 | 03:40 | T1 |
 
 ## 5. Trợ giúp / can thiệp
 

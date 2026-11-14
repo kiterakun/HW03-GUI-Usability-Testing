@@ -5,7 +5,7 @@ Sinh vien   : 23120341 — 23120341@student.hcmus.edu.vn
 Repository  : https://github.com/kiterakun/HW03-GUI-Usability-Testing
 SUT         : eshop-sut/frontend-admin @ commit 85af3ba
 Ngay        : 2026-11-12 → 2026-11-14
-Tong so commit : 25
+Tong so commit : 27
 
 HW03 §12: "Create a new Git commit for each step of the testing procedure (for example:
 checklist design, checklist execution, bug logging, each usability session, and the analysis)."
@@ -41,6 +41,8 @@ checklist design, checklist execution, bug logging, each usability session, and 
 23  ec3b8e4    2026-11-14   23120341    docs: cap nhat lai git commit log cho khop 22 commit
 24  2c9949d    2026-11-14   23120341    docs: hoan tat bao cao chinh (23 commit), tai lieu PDF va bang chung 7 phien usability
 25  faff551    2026-11-14   23120341    docs: chuan hoa lien ket tuong doi giua cac tai lieu trong goi nop Submit
+26  d37199d    2026-11-14   23120341    docs: hoan thien bao cao chinh (ban PDF) va dong bo toan bo goi nop Submit
+27  67777f2    2026-11-14   23120341    docs: hoan thien bao cao chinh - bang commit tu sinh dong va lien ket chuan
 
 ====================================================================================================
 2. CHI TIET TUNG COMMIT (message day du)
@@ -264,6 +266,20 @@ Date:   2026-11-14 16:59:44 +0700
 
     docs: chuan hoa lien ket tuong doi giua cac tai lieu trong goi nop Submit
 
+----------------------------------------------------------------------------------------------------
+commit d37199d549f908885dc443d4765054b2625363e3
+Author: 23120341 <23120341@student.hcmus.edu.vn>
+Date:   2026-11-14 17:00:42 +0700
+
+    docs: hoan thien bao cao chinh (ban PDF) va dong bo toan bo goi nop Submit
+
+----------------------------------------------------------------------------------------------------
+commit 67777f2eeea8e40c9047f7bd071dd2c85c7d8e1c
+Author: 23120341 <23120341@student.hcmus.edu.vn>
+Date:   2026-11-14 17:05:58 +0700
+
+    docs: hoan thien bao cao chinh - bang commit tu sinh dong va lien ket chuan
+
 
 ====================================================================================================
 3. COMMIT → BUOC KIEM THU (HW03 §12)
@@ -355,6 +371,12 @@ ec3b8e4  —
     
 
 faff551  —
+    
+
+d37199d  —
+    
+
+67777f2  —
     
 
 ====================================================================================================
@@ -585,15 +607,28 @@ M	submit/git-commit-log.txt
 M	submit/main_report/HW03_GUI_Usability_Main_Report.md
 M	submit/main_report/HW03_GUI_Usability_Main_Report.pdf
 
+--- d37199d ---
+d37199d docs: hoan thien bao cao chinh (ban PDF) va dong bo toan bo goi nop Submit
+M	submit/README.md
+M	submit/checklist/test-summary.md
+M	submit/git-commit-log.txt
+M	submit/main_report/HW03_GUI_Usability_Main_Report.md
+M	submit/main_report/HW03_GUI_Usability_Main_Report.pdf
+
+--- 67777f2 ---
+67777f2 docs: hoan thien bao cao chinh - bang commit tu sinh dong va lien ket chuan
+M	submit/main_report/HW03_GUI_Usability_Main_Report.md
+M	submit/main_report/HW03_GUI_Usability_Main_Report.pdf
+
 ====================================================================================================
 5. TOM TAT
 ====================================================================================================
 
-Tong so commit              : 25
+Tong so commit              : 27
 Commit cho moi buoc kiem thu: co (xem muc 3)
 Task 1 (GUI Checklist)      : 13 commit
 Task 2 (Usability)          :  4 commit (+ 2 commit goi nop)
-Tai lieu dinh kem           : 288 file
+Tai lieu dinh kem           : 295 file
 
 ====================================================================================================
 END OF GIT COMMIT LOG

@@ -125,14 +125,14 @@
 
 | # | Mô tả trung tính (không diễn giải) | Trích dẫn | Số lần xảy ra | Mức độ (1–3) | Mốc thời gian | Task |
 |---|---|---|---|---|---|---|
-| F1 | Không có nút Sửa trong bảng danh mục; người tham gia bấm vào tên, bấm đúp và quét toàn bảng để tìm nút sửa. | “Chỗ này lạ, mình tưởng vào web bán hàng tiếng Việt.” → “Sửa ở đâu nhỉ? Không có nút Sửa. Chỉ có nút Xóa thôi.” | 4 | 3 | 08:30–12:30 | T2 |
-| F2 | Thao tác xóa không có hộp thoại xác nhận, dòng bị xóa ngay khi bấm. | “Ơ, xóa luôn không hỏi à? May mà cái này là danh mục vừa tạo, chứ xóa nhầm là mất.” | 1 | 1 | 13:40 | T2 |
-| F3 | Sửa một sản phẩm làm tên của toàn bộ 5 dòng trong bảng đổi theo. | “Khoan… còn mấy sản phẩm khác cũng tên giống hệt luôn? Lạ thật.” | 1 | 1 | 17:10 | T3 |
-| F4 | Giá mới `5990000` không xuất hiện trên bảng sau khi lưu (vẫn hiện `6000000 ₫`). | “Tên thì đổi rồi mà sao giá vẫn 6 triệu? Tôi tưởng mình chưa lưu.” | 1 | 1 | 17:20 | T3 |
-| F5 | Form sản phẩm không có ký hiệu `*`/`<label>`; nhãn chỉ là placeholder và biến mất khi nhập. | “Không biết ô nào bắt buộc. Chắc ô tên và ô giá, mình thử điền cả hai.” | 1 | 1 | 15:00 | T3 |
-| F6 | Thông báo đăng nhập sai qua `alert()` native, không nêu nguyên nhân và chặn giao diện. | “Sai mật khẩu hả? Thông báo này chung chung quá, không biết là do mình sai hay hệ thống lỗi.” | 1 | 1 | 01:10 | T4 |
-| F7 | Không có thông báo xác nhận sau khi thêm danh mục; người tham gia phải tự nhìn bảng. | “À, nó hiện trong bảng rồi. Mà không có thông báo gì cả, phải tự nhìn.” | 1 | 1 | 07:00 | T2 |
-| F8 | Không tìm thấy bảng đơn hàng để đối chiếu con số doanh thu trên Dashboard. | “Không thấy bảng đơn hàng ở đây, nên tôi cũng không đối chiếu được. Tôi cứ tin là số này.” | 1 | 1 | 05:10 | T1 |
+| F1 | Không có nút Sửa trong bảng danh mục; người tham gia bấm vào tên, bấm đúp và quét toàn bảng để tìm nút sửa. | “Sửa ở đâu nhỉ? Không có nút Sửa. Chỉ có nút Xóa thôi.” → “Chắc phải ở chỗ khác. Hay là không cho sửa danh mục luôn?” | 4 | 3 | 08:30–12:30 | T2 |
+| F2 | Thao tác xóa không có hộp thoại xác nhận, dòng bị xóa ngay khi bấm. | “Ơ, xóa luôn không hỏi à? May mà cái này là danh mục vừa tạo, chứ xóa nhầm là mất.” | 1 | 3 | 13:40 | T2 |
+| F3 | Sửa một sản phẩm làm tên của toàn bộ 5 dòng trong bảng đổi theo. | “Khoan… còn mấy sản phẩm khác cũng tên giống hệt luôn? Lạ thật.” | 1 | 3 | 17:10 | T3 |
+| F4 | Giá mới `5990000` không xuất hiện trên bảng sau khi lưu (vẫn hiện `6000000 ₫`). | “Tên thì đổi rồi mà sao giá vẫn 6 triệu? Tôi tưởng mình chưa lưu.” | 1 | 2 | 17:20 | T3 |
+| F5 | Form sản phẩm không có ký hiệu `*`/`<label>`; nhãn chỉ là placeholder và biến mất khi nhập. | “Không biết ô nào bắt buộc. Chắc ô tên và ô giá, mình thử điền cả hai.” | 1 | 2 | 15:00 | T3 |
+| F6 | Thông báo đăng nhập sai qua `alert()` native, không nêu nguyên nhân và chặn giao diện. | “Sai mật khẩu hả? Thông báo này chung chung quá, không biết là do mình sai hay hệ thống lỗi.” | 1 | 2 | 01:10 | T4 |
+| F7 | Không có thông báo xác nhận sau khi thêm danh mục; người tham gia phải tự nhìn bảng. | “À, nó hiện trong bảng rồi. Mà không có thông báo gì cả, phải tự nhìn.” | 1 | 2 | 07:00 | T2 |
+| F8 | Không tìm thấy bảng đơn hàng để đối chiếu con số doanh thu trên Dashboard. | “Không thấy bảng đơn hàng ở đây, nên tôi cũng không đối chiếu được. Tôi cứ tin là số này.” | 1 | 2 | 05:10 | T1 |
 
 ## 5. Trợ giúp / can thiệp
 

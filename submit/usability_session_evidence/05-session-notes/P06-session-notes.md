@@ -126,13 +126,13 @@
 | # | Mô tả trung tính (không diễn giải) | Trích dẫn | Số lần xảy ra | Mức độ (1–3) | Mốc thời gian | Task |
 |---|---|---|---|---|---|---|
 | F1 | Không có chức năng Sửa danh mục — người tham gia tìm lâu nhất và **dừng task**. | “Sửa ở đâu vậy? Không thấy nút nào hết.” → “Hay là ứng dụng này không cho sửa danh mục?” | 6 | 3 | 11:00–16:00 | T2 |
-| F2 | Xóa không có hộp thoại xác nhận. | “Xóa không hỏi gì hết. Hơi rợn.” | 1 | 1 | 17:00 | T2 |
-| F3 | Sửa một sản phẩm làm đổi tên toàn bộ bảng. | “Sao tất cả cùng tên vậy? Tôi chỉ sửa một cái mà…” | 1 | 1 | 22:30 | T3 |
+| F2 | Xóa không có hộp thoại xác nhận. | “Xóa không hỏi gì hết. Hơi rợn.” | 1 | 2 | 17:00 | T2 |
+| F3 | Sửa một sản phẩm làm đổi tên toàn bộ bảng. | “Sao tất cả cùng tên vậy? Tôi chỉ sửa một cái mà…” | 1 | 3 | 22:30 | T3 |
 | F4 | Giá mới không hiển thị sau khi lưu. | “Giá… tôi không để ý, thấy báo thành công là tôi tin.” | 1 | 1 | 22:40 | T3 |
-| F5 | Form sản phẩm thiếu nhãn và ký hiệu `*`; người tham gia dừng lâu ở ô giá. | “Ô giá này bắt buộc đúng không? Không thấy dấu *.” | 1 | 1 | 19:00 | T3 |
-| F6 | `alert()` thô khi đăng nhập sai; người tham gia không biết nguyên nhân. | “Sai rồi à. Gõ lại.” | 1 | 1 | 02:00 | T4 |
-| F7 | Không hiểu nhãn “Delivered” → cần trợ giúp để hoàn thành T1. | “em chưa chắc ‘Delivered’ gồm những đơn nào” | 1 | 1 | 05:30–08:00 | T1 |
-| F8 | Trang đăng nhập hoàn toàn tiếng Anh gây khó khăn ban đầu. | “Trang này tiếng Anh hết… Email, Password là gì nhỉ? À hiểu rồi.” | 1 | 1 | 00:00 | — |
+| F5 | Form sản phẩm thiếu nhãn và ký hiệu `*`; người tham gia dừng lâu ở ô giá. | “Ô giá này bắt buộc đúng không? Không thấy dấu *.” | 1 | 2 | 19:00 | T3 |
+| F6 | `alert()` thô khi đăng nhập sai; người tham gia không biết nguyên nhân. | “Sai rồi à. Gõ lại.” | 1 | 2 | 02:00 | T4 |
+| F7 | Không hiểu nhãn “Delivered” → cần trợ giúp để hoàn thành T1. | “em chưa chắc ‘Delivered’ gồm những đơn nào” | 1 | 3 | 05:30–08:00 | T1 |
+| F8 | Trang đăng nhập hoàn toàn tiếng Anh gây khó khăn ban đầu. | “Trang này tiếng Anh hết… Email, Password là gì nhỉ? À hiểu rồi.” | 1 | 2 | 00:00 | — |
 
 ## 5. Trợ giúp / can thiệp
 

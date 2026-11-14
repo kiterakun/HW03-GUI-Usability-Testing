@@ -124,11 +124,11 @@
 
 | # | Mô tả trung tính (không diễn giải) | Trích dẫn | Số lần xảy ra | Mức độ (1–3) | Mốc thời gian | Task |
 |---|---|---|---|---|---|---|
-| F1 | Không có chức năng Sửa danh mục; người tham gia thử bấm vào tên và zoom out để tìm nút. | “Không có nút Sửa. Chắc là app này không cho sửa danh mục.” | 4 | 3 | 07:10–10:00 | T2 |
-| F2 | Nút Xóa không có hộp thoại xác nhận — người tham gia vô tình xóa một danh mục seed. | “Khoan, xóa luôn không hỏi? Cái này là danh mục có sẵn!” | 1 | 1 | 09:30 | T2 |
-| F3 | Sửa một sản phẩm làm tên của toàn bộ 5 dòng trong bảng đổi theo. | “Sao 5 cái này tên giống nhau hết vậy? Tôi chỉ sửa một cái thôi mà.” | 1 | 1 | 16:00 | T3 |
-| F4 | Giá `5990000` không hiển thị sau khi lưu (vẫn là `6000000 ₫`). | “Tên thì đổi rồi, còn giá… à, giá vẫn 6 triệu. Lạ.” | 1 | 1 | 16:10 | T3 |
-| F5 | Không có ký hiệu trường bắt buộc; nhãn là placeholder biến mất khi nhập. | “Không có dấu *, chắc tên và giá là bắt buộc.” | 1 | 1 | 13:00 | T3 |
+| F1 | Không có chức năng Sửa danh mục; người tham gia thử bấm vào tên và zoom out để tìm nút. | “Không có nút Sửa. Chắc là app này không cho sửa danh mục.” | 4 | 2 | 07:10–10:00 | T2 |
+| F2 | Nút Xóa không có hộp thoại xác nhận — người tham gia vô tình xóa một danh mục seed. | “Khoan, xóa luôn không hỏi? Cái này là danh mục có sẵn!” | 1 | 3 | 09:30 | T2 |
+| F3 | Sửa một sản phẩm làm tên của toàn bộ 5 dòng trong bảng đổi theo. | “Sao 5 cái này tên giống nhau hết vậy? Tôi chỉ sửa một cái thôi mà.” | 1 | 3 | 16:00 | T3 |
+| F4 | Giá `5990000` không hiển thị sau khi lưu (vẫn là `6000000 ₫`). | “Tên thì đổi rồi, còn giá… à, giá vẫn 6 triệu. Lạ.” | 1 | 2 | 16:10 | T3 |
+| F5 | Không có ký hiệu trường bắt buộc; nhãn là placeholder biến mất khi nhập. | “Không có dấu *, chắc tên và giá là bắt buộc.” | 1 | 2 | 13:00 | T3 |
 | F6 | `alert()` thô khi đăng nhập sai; không nêu nguyên nhân, không chặn form rỗng. | “Sai mật khẩu thôi, tôi gõ lại.” | 1 | 1 | 01:00 | T4 |
 | F7 | Dashboard không cho đối chiếu doanh thu với bảng đơn hàng. | “Không có bảng đơn hàng để so. Tôi không biết con số này có bị nhân đôi không.” | 1 | 1 | 04:30 | T1 |
 

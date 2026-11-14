@@ -125,9 +125,9 @@
 |---|---|---|---|---|---|---|
 | F1 | Không có chức năng Sửa danh mục — người tham gia nhận ra khá nhanh và tự chọn workaround. | “App này không có nút sửa danh mục. Tạo mới rồi xóa cũ đi.” | 2 | 2 | 06:20–08:00 | T2 |
 | F2 | Xóa không có hộp thoại xác nhận — người tham gia không nhận ra vì chỉ xóa dữ liệu vừa tạo. | “Xóa xong.” | 1 | 1 | 08:00 | T2 |
-| F3 | Sửa một sản phẩm làm đổi tên toàn bộ 5 dòng. | “Ơ sao tên các sản phẩm khác cũng đổi theo vậy?” | 1 | 1 | 12:40 | T3 |
+| F3 | Sửa một sản phẩm làm đổi tên toàn bộ 5 dòng. | “Ơ sao tên các sản phẩm khác cũng đổi theo vậy?” | 1 | 3 | 12:40 | T3 |
 | F4 | Giá mới không hiển thị sau khi lưu. | “Giá… à, tôi không nhìn kỹ.” | 1 | 1 | 12:45 | T3 |
-| F5 | Form sản phẩm không có `<label>`; nhãn là placeholder và biến mất khi nhập. | “Nhãn biến mất khi mình gõ, nhìn lại không biết ô nào là ô nào.” | 1 | 1 | 10:30 | T3 |
+| F5 | Form sản phẩm không có `<label>`; nhãn là placeholder và biến mất khi nhập. | “Nhãn biến mất khi mình gõ, nhìn lại không biết ô nào là ô nào.” | 1 | 2 | 10:30 | T3 |
 | F6 | Thông báo đăng nhập sai dùng `alert()` chung chung. | “Sai mật khẩu. Gõ lại thôi.” | 1 | 1 | 00:50 | T4 |
 | F7 | Không có thông báo xác nhận khi thêm danh mục; phải tự nhìn bảng. | “Thêm xong, thấy trong bảng.” | 1 | 1 | 05:30 | T2 |
 
