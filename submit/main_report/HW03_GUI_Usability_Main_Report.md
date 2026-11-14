@@ -1642,7 +1642,7 @@ Mỗi mục **Failed** đều có ít nhất một ảnh chụp màn hình minh 
 | Điểm UEQ-S | 3,99/7 (49,9%) |
 | Số phát hiện usability | 8 vấn đề hệ thống · 0 lỗi lẻ |
 | Số ảnh bằng chứng | 55 ảnh checklist + 23 ảnh GitHub Issues |
-| Số commit | **27** (xem [`git-commit-log.txt`](../git-commit-log.txt)) |
+| Số commit | **28** (xem [`git-commit-log.txt`](../git-commit-log.txt)) |
 
 ### 5.3. Kết luận
 
@@ -1754,7 +1754,7 @@ Repository: **https://github.com/kiterakun/HW03-GUI-Usability-Testing/issues**
 
 ### 7.5. Nhật ký Git commit
 
-HW03 §12 yêu cầu **một commit cho mỗi bước của quy trình kiểm thử**. Nhật ký đầy đủ (**27 commit** tại thời điểm sinh báo cáo, từ `init commit` đến commit hiện tại) nằm ở [`git-commit-log.txt`](../git-commit-log.txt) — tệp này là bản chính xác nhất.
+HW03 §12 yêu cầu **một commit cho mỗi bước của quy trình kiểm thử**. Nhật ký đầy đủ (**28 commit** tại thời điểm sinh báo cáo, từ `init commit` đến commit hiện tại) nằm ở [`git-commit-log.txt`](../git-commit-log.txt) — tệp này là bản chính xác nhất.
 
 | # | Commit | Nội dung commit |
 |---:|---|---|
@@ -1785,6 +1785,7 @@ HW03 §12 yêu cầu **một commit cho mỗi bước của quy trình kiểm th
 | 25 | `faff551` | docs: chuan hoa lien ket tuong doi giua cac tai lieu trong goi nop Submit |
 | 26 | `d37199d` | docs: hoan thien bao cao chinh (ban PDF) va dong bo toan bo goi nop Submit |
 | 27 | `67777f2` | docs: hoan thien bao cao chinh - bang commit tu sinh dong va lien ket chuan |
+| 28 | `537a372` | docs(task2): chuan hoa muc do buc boi va trich dan trong 7 file ghi chu phiEN |
 
 ### 7.6. Task 3 — Cross-browser / Cross-platform: **KHÔNG THỰC HIỆN**
 

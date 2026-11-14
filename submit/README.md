@@ -90,7 +90,7 @@ Submit/
 | Số người tham gia | **7** |
 | Số bản ghi màn hình | **7** (P01–P07) + 1 pilot dry-run |
 | Ảnh bằng chứng | **55** (checklist) + **23** (GitHub Issues) = 78 |
-| Số commit | **26** |
+| Số commit | **28** *(xem [`git-commit-log.txt`](git-commit-log.txt) — tệp này là bản chính xác nhất)* |
 | Điểm SUS / UEQ-S | **6,8 / 100 (F)** · **3,99 / 7** |
 
 ---
