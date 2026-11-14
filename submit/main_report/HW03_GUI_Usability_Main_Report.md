@@ -1642,7 +1642,7 @@ Mỗi mục **Failed** đều có ít nhất một ảnh chụp màn hình minh 
 | Điểm UEQ-S | 3,99/7 (49,9%) |
 | Số phát hiện usability | 8 vấn đề hệ thống · 0 lỗi lẻ |
 | Số ảnh bằng chứng | 55 ảnh checklist + 23 ảnh GitHub Issues |
-| Số commit | **23** (xem [`git-commit-log.txt`](../git-commit-log.txt)) |
+| Số commit | **26** (xem [`git-commit-log.txt`](../git-commit-log.txt)) |
 
 ### 5.3. Kết luận
 
@@ -1754,7 +1754,7 @@ Repository: **https://github.com/kiterakun/HW03-GUI-Usability-Testing/issues**
 
 ### 7.5. Nhật ký Git commit
 
-HW03 §12 yêu cầu **một commit cho mỗi bước của quy trình kiểm thử**. Nhật ký đầy đủ (**23 commit**, từ `init commit` đến commit hiện tại) nằm ở [**[`git-commit-log.txt`](../git-commit-log.txt)**](../git-commit-log.txt).
+HW03 §12 yêu cầu **một commit cho mỗi bước của quy trình kiểm thử**. Nhật ký đầy đủ (**26 commit**, từ `init commit` đến commit hiện tại) nằm ở [**[`git-commit-log.txt`](../git-commit-log.txt)**](../git-commit-log.txt).
 
 | # | Commit | Bước kiểm thử | Nội dung |
 |---:|---|---|---|
@@ -1781,6 +1781,9 @@ HW03 §12 yêu cầu **một commit cho mỗi bước của quy trình kiểm th
 | 21 | `ad5600d` | HW03 §14 | Hoàn tất gói nộp Submit — báo cáo chính, bug report, ai audit, bằng chứng 7 phiên, excel checklist |
 | 22 | `f892f0c` | HW03 §14 | Đồng bộ lại gói nộp sau khi sửa lỗi render bảng (escape raw HTML) và thêm 23 ảnh chụp trang GitHub Issues |
 | 23 | `ec3b8e4` | HW03 §12 | Cập nhật lại git commit log cho khớp số commit |
+| 24 | `2c9949d` | HW03 §14 | Hoàn tất báo cáo chính, tài liệu PDF và bằng chứng 7 phiên usability |
+| 25 | `faff551` | HW03 §14 | Chuẩn hoá liên kết tương đối giữa các tài liệu trong gói nộp Submit |
+| 26 | `<FINAL>` | HW03 §14 | Hoàn thiện báo cáo chính (bản PDF) và đồng bộ toàn bộ gói nộp |
 
 ### 7.6. Task 3 — Cross-browser / Cross-platform: **KHÔNG THỰC HIỆN**
 

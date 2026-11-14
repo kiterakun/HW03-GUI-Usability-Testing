@@ -117,7 +117,7 @@
 | Số vấn đề khả dụng + cải tiến | 2 + 5 | 6 vấn đề hệ thống | 13 |
 | Số người tham gia | — | 7 | **7** |
 | Ảnh bằng chứng | 55 | 23 (GitHub Issues) | **78** |
-| Số commit | 13 | 10 | **23** |
+| Số commit | 13 | 13 | **26** |
 | Video demo skill | — | — | *(xem `../README.md`)* |
 
 ---

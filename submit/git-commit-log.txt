@@ -5,7 +5,7 @@ Sinh vien   : 23120341 — 23120341@student.hcmus.edu.vn
 Repository  : https://github.com/kiterakun/HW03-GUI-Usability-Testing
 SUT         : eshop-sut/frontend-admin @ commit 85af3ba
 Ngay        : 2026-11-12 → 2026-11-14
-Tong so commit : 24
+Tong so commit : 25
 
 HW03 §12: "Create a new Git commit for each step of the testing procedure (for example:
 checklist design, checklist execution, bug logging, each usability session, and the analysis)."
@@ -40,6 +40,7 @@ checklist design, checklist execution, bug logging, each usability session, and 
 22  f892f0c    2026-11-14   23120341    docs: dong bo lai goi nop Submit sau khi sua loi render cua bang (escape raw HTML) va them 23 anh chup trang GitHub Issues
 23  ec3b8e4    2026-11-14   23120341    docs: cap nhat lai git commit log cho khop 22 commit
 24  2c9949d    2026-11-14   23120341    docs: hoan tat bao cao chinh (23 commit), tai lieu PDF va bang chung 7 phien usability
+25  faff551    2026-11-14   23120341    docs: chuan hoa lien ket tuong doi giua cac tai lieu trong goi nop Submit
 
 ====================================================================================================
 2. CHI TIET TUNG COMMIT (message day du)
@@ -256,6 +257,13 @@ Date:   2026-11-14 16:56:21 +0700
 
     docs: hoan tat bao cao chinh (23 commit), tai lieu PDF va bang chung 7 phien usability
 
+----------------------------------------------------------------------------------------------------
+commit faff551d5ecf564424203a4bf0265badf194ca9b
+Author: 23120341 <23120341@student.hcmus.edu.vn>
+Date:   2026-11-14 16:59:44 +0700
+
+    docs: chuan hoa lien ket tuong doi giua cac tai lieu trong goi nop Submit
+
 
 ====================================================================================================
 3. COMMIT → BUOC KIEM THU (HW03 §12)
@@ -344,6 +352,9 @@ ec3b8e4  —
     
 
 2c9949d  —
+    
+
+faff551  —
     
 
 ====================================================================================================
@@ -568,15 +579,21 @@ M	submit/git-commit-log.txt
 M	submit/main_report/HW03_GUI_Usability_Main_Report.md
 M	submit/main_report/HW03_GUI_Usability_Main_Report.pdf
 
+--- faff551 ---
+faff551 docs: chuan hoa lien ket tuong doi giua cac tai lieu trong goi nop Submit
+M	submit/git-commit-log.txt
+M	submit/main_report/HW03_GUI_Usability_Main_Report.md
+M	submit/main_report/HW03_GUI_Usability_Main_Report.pdf
+
 ====================================================================================================
 5. TOM TAT
 ====================================================================================================
 
-Tong so commit              : 24
+Tong so commit              : 25
 Commit cho moi buoc kiem thu: co (xem muc 3)
 Task 1 (GUI Checklist)      : 13 commit
 Task 2 (Usability)          :  4 commit (+ 2 commit goi nop)
-Tai lieu dinh kem           : 285 file
+Tai lieu dinh kem           : 288 file
 
 ====================================================================================================
 END OF GIT COMMIT LOG
