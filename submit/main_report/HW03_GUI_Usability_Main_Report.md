@@ -1695,7 +1695,7 @@ Mỗi mục **Failed** đều có ít nhất một ảnh chụp màn hình minh 
 | 8 | [`usability_session_evidence/`](../usability_session_evidence/) | Bằng chứng 7 phiên (kịch bản, ghi chú phiên, SUS/UEQ-S, severity, participants) | §14 |
 | 9 | `checklist/checklist-gui-testing.xlsx` | Excel checklist 47 mục (3 sheet: Checklist / Test Summary / Bug List) | §14 |
 | 10 | `checklist/test-summary.md` | Test summary bằng văn bản | §14 |
-| 11 | [`git-commit-log.txt`](../git-commit-log.txt) | Nhật ký git commit dạng text | §12 |
+| 11 | `git-commit-log.txt` | Nhật ký git commit dạng text | §12 |
 | 12 | `README.md` | Bảng tự đánh giá + test summary | §14 |
 
 ### 7.2. Danh sách GitHub Issues
@@ -1754,36 +1754,36 @@ Repository: **https://github.com/kiterakun/HW03-GUI-Usability-Testing/issues**
 
 ### 7.5. Nhật ký Git commit
 
-HW03 §12 yêu cầu **một commit cho mỗi bước của quy trình kiểm thử**. Nhật ký đầy đủ (**26 commit**, từ `init commit` đến commit hiện tại) nằm ở [**[`git-commit-log.txt`](../git-commit-log.txt)**](../git-commit-log.txt).
+HW03 §12 yêu cầu **một commit cho mỗi bước của quy trình kiểm thử**. Nhật ký đầy đủ (**26 commit** tại thời điểm sinh báo cáo, từ `init commit` đến commit hiện tại) nằm ở [`git-commit-log.txt`](../git-commit-log.txt) — tệp này là bản chính xác nhất.
 
-| # | Commit | Bước kiểm thử | Nội dung |
-|---:|---|---|---|
-| 1 | `cada20c` | Khởi động | Khởi tạo repository bài làm |
-| 2 | `aaa5d47` | T1 · B1 | Chốt phạm vi kiểm thử GUI cho phân hệ Web Admin EShop |
-| 3 | `b50a71a` | T1 · B2 | Phân tích giao diện Web Admin từ source code và runtime |
-| 4 | `7494db3` | T1 · B3–B4 | Thiết kế checklist GUI 47 mục theo 4 interface aspects |
-| 5 | `df34dfb` | T1 · B5 | **Thực thi checklist trên SUT thật — 47/47 mục, 40 failed** |
-| 6 | `4fa5c65` | T1 · B6a | Phân tích kết quả và phân loại bug theo nguyên nhân gốc |
-| 7 | `2972856` | T1 · B6b | Chuẩn hoá 21 bug report kèm ảnh bằng chứng |
-| 8 | `902b8ce` | T1 · B7 | Báo cáo tổng hợp GUI testing và README tự đánh giá |
-| 9 | `d7a097d` | T1 · Phụ trợ | Bản Excel checklist, file CSV mẫu và quản lý tiến độ |
-| 10 | `474e7a7` | HW03 §12 | Thêm file git commit log dạng text theo yêu cầu HW03 §12 |
-| 11 | `c0c7bf3` | T1 · Issues | Bổ sung chỉ mục GitHub Issues và luồng dẫn truy cập ảnh trong README |
-| 12 | `586a910` | HW03 §9 | Thêm AI Audit Report và tóm tắt 8 lỗi AI của phiên làm việc |
-| 13 | `5634049` | **T2** | Toàn bộ output usability testing: 7 phiên, phân tích, heuristic, severity, improvements, report |
-| 14 | `a19a2aa` | T1+T2 | Cập nhật README sau khi hoàn tất Task 1 và Task 2 |
-| 15 | `37e3c29` | **T2** | Bổ sung 7 file ghi chú phiên P01–P07 theo mẫu TEMPLATE-session-notes |
-| 16 | `2bb2643` | HW03 §14 | Thêm gói nộp Submit — báo cáo chính, bug report kèm ảnh GitHub Issues, AI audit report |
-| 17 | `1ee1b76` | HW03 §14 | Thêm bằng chứng 7 phiên usability, Excel checklist và test summary |
-| 18 | `3432bc3` | HW03 §12 | Cập nhật git commit log đầy đủ theo HW03 §12 (kèm bảng commit → bước kiểm thử) |
-| 19 | `6878dbb` | HW03 §12 | Đồng bộ bản git commit log vào gói nộp Submit |
-| 20 | `bd43944` | HW03 §12 | Đồng bộ bản git commit log mới nhất vào gói nộp và repo |
-| 21 | `ad5600d` | HW03 §14 | Hoàn tất gói nộp Submit — báo cáo chính, bug report, ai audit, bằng chứng 7 phiên, excel checklist |
-| 22 | `f892f0c` | HW03 §14 | Đồng bộ lại gói nộp sau khi sửa lỗi render bảng (escape raw HTML) và thêm 23 ảnh chụp trang GitHub Issues |
-| 23 | `ec3b8e4` | HW03 §12 | Cập nhật lại git commit log cho khớp số commit |
-| 24 | `2c9949d` | HW03 §14 | Hoàn tất báo cáo chính, tài liệu PDF và bằng chứng 7 phiên usability |
-| 25 | `faff551` | HW03 §14 | Chuẩn hoá liên kết tương đối giữa các tài liệu trong gói nộp Submit |
-| 26 | `<FINAL>` | HW03 §14 | Hoàn thiện báo cáo chính (bản PDF) và đồng bộ toàn bộ gói nộp |
+| # | Commit | Nội dung commit |
+|---:|---|---|
+| 1 | `cada20c` | init commit |
+| 2 | `aaa5d47` | docs(task1): chot pham vi kiem thu GUI cho phan he Web Admin EShop |
+| 3 | `b50a71a` | docs(task1): phan tich giao dien Web Admin tu source code va runtime |
+| 4 | `7494db3` | feat(task1): checklist GUI 47 muc theo 4 interface aspects |
+| 5 | `df34dfb` | test(task1): thuc thi checklist tren SUT that - 47/47 muc, 40 failed |
+| 6 | `4fa5c65` | docs(task1): phan tich ket qua va phan loai bug theo nguyen nhan goc |
+| 7 | `2972856` | fix(task1): 21 bug report chuan hoa kem anh bang chung |
+| 8 | `902b8ce` | docs(task1): bao cao tong hop GUI testing va README tu danh giá |
+| 9 | `d7a097d` | chore(task1): ban Excel checklist, file CSV mau va quan ly tien do |
+| 10 | `474e7a7` | docs(task1): them file git commit log dang text theo yeu cau HW03 §12 |
+| 11 | `c0c7bf3` | docs(task1): bo sung chi muc GitHub Issues va luong dan truy cap anh trong README |
+| 12 | `586a910` | docs(task1): them AI Audit Report va tom tat 8 loi AI cua phien lam viec |
+| 13 | `5634049` | docs(task2): add usability testing outputs and integration of 7 participant sessions, analysis, heuristic findings, severity assessment, improvements and usability report |
+| 14 | `a19a2aa` | docs: update README for Task 1 and Task 2 completion |
+| 15 | `37e3c29` | docs(task2): bo sung 7 file ghi chu phiEN P01-P07 theo mau TEMPLATE-session-notes |
+| 16 | `2bb2643` | docs(task1+2): them goi nop Submit - bao cao chinh, bug report kem anh GitHub Issues, AI audit report |
+| 17 | `1ee1b76` | docs(task2): them goi bang chung 7 phien usability, Excel checklist va test summary |
+| 18 | `3432bc3` | docs: cap nhat git commit log day du theo HW03 §12 (17 commit, kem bang commit -> buoc kiem thu) |
+| 19 | `6878dbb` | docs: dong bo ban git commit log vao goi nop Submit |
+| 20 | `bd43944` | docs: dong bo ban git commit log moi nhat vao goi nop va repo |
+| 21 | `ad5600d` | docs: hoan tat goi nop Submit - bao cao chinh, bug report, ai audit, bang chung 7 phien, excel checklist |
+| 22 | `f892f0c` | docs: dong bo lai goi nop Submit sau khi sua loi render cua bang (escape raw HTML) va them 23 anh chup trang GitHub Issues |
+| 23 | `ec3b8e4` | docs: cap nhat lai git commit log cho khop 22 commit |
+| 24 | `2c9949d` | docs: hoan tat bao cao chinh (23 commit), tai lieu PDF va bang chung 7 phien usability |
+| 25 | `faff551` | docs: chuan hoa lien ket tuong doi giua cac tai lieu trong goi nop Submit |
+| 26 | `d37199d` | docs: hoan thien bao cao chinh (ban PDF) va dong bo toan bo goi nop Submit |
 
 ### 7.6. Task 3 — Cross-browser / Cross-platform: **KHÔNG THỰC HIỆN**
 
