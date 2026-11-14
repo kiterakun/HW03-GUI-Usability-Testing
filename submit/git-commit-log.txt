@@ -1,18 +1,292 @@
-﻿================================================================================
-GIT LOG (git log --reverse --pretty=fuller)
-================================================================================
+====================================================================================================
+GIT COMMIT LOG — HW03-AI · GUI & Usability Testing · EShop Web Admin
+====================================================================================================
+Sinh vien   : 23120341 — 23120341@student.hcmus.edu.vn
+Repository  : https://github.com/kiterakun/HW03-GUI-Usability-Testing
+SUT         : eshop-sut/frontend-admin @ commit 85af3ba
+Ngay        : 2026-11-12 → 2026-11-14
+Tong so commit : 18
 
- commit cada20c5a786348e60cb50aea9db7d7eeefb82eb Author: 23120341 <23120341@student.hcmus.edu.vn> Date:   2026-11-12 20:55:43 +0700      init commit   commit aaa5d479d805ff7da2db5d14dcbc00a2bef4d0e7 Author: 23120341 <23120341@student.hcmus.edu.vn> Date:   2026-11-12 21:26:22 +0700      docs(task1): chot pham vi kiem thu GUI cho phan he Web Admin EShop          - 5 man hinh / luong: Admin Login, Dashboard, Danh muc, San pham (CRUD), Import CSV     - Tieu chuan: 4 Interface Aspects (IA-01 -> IA-04)     - Ghi nhan mau thuan mat khau admin giua README.md va setup_guide.md     - Ghi nhan 3 man hinh ngoai pham vi (Ma Giam Gia, Don hang, Nguoi dung)   commit b50a71a3d210981a5d9fdee465f879a816ea1200 Author: 23120341 <23120341@student.hcmus.edu.vn> Date:   2026-11-12 21:26:22 +0700      docs(task1): phan tich giao dien Web Admin tu source code va runtime          - Doc 922 dong src/App.jsx: 1 component, state activeTab, khong co routing     - Khao sat runtime bang Chrome DevTools Protocol:       * do WCAG contrast ratio (placeholder 2.35:1, nut Sua 1.92:1, nut Xoa 3.76:1)       * dem <label>/<h1>/aria/landmark (deu = 0)       * do chuoi diem dung focus khi Tab (0/7 muc menu)       * mo phong viewport 375px/768px (cot KPI con 19.5px)       * kiem tra prefers-color-scheme: dark va dir=rtl       * parse CSV that (quoted.csv, invalid.csv) de quan sat hanh vi import   commit 7494db3ae73d843be61d7a9c552e19fbaaf799d6 Author: 23120341 <23120341@student.hcmus.edu.vn> Date:   2026-11-12 21:26:22 +0700      feat(task1): checklist GUI 47 muc theo 4 interface aspects          - IA-01 General UI (13) | IA-02 Forms (12) | IA-03 Navigation (9) | IA-04 Feedback/State (13)     - Moi muc: ID, tieu chi kiem chung kha quan, ket qua mong doi, cach kiem chung, muc do     - Vong review v1 (67 muc) -> v2 (77 muc, AI tu bo sung 10 muc kem ma ly do 'AI bo sot')       -> v3 (47 muc) theo yeu cau nguoi hoc: bo FR-21..24, rut gon 8 nhom muc trung lap   commit df34dfb512a75745b25ebb649bc75c5cfd0f656c Author: 23120341 <23120341@student.hcmus.edu.vn> Date:   2026-11-12 21:26:23 +0700      test(task1): thuc thi checklist tren SUT that - 47/47 muc, 40 failed          - 7 Passed / 40 Failed (pass rate 14.9%), 0 muc bo qua     - IA-04 fail 100% (13/13) - khong co loading / empty state / success toast / inline error     - 55 anh bang chung cho 40 muc Failed, tat ca da overlay 23120341@student.hcmus.edu.vn     - Moi muc Failed deu co ghi chu kem so do dinh luong (contrast ratio, so phan tu DOM, pixel)   commit 4fa5c65c90bd6cd8f1ca0056fe993533cc890710 Author: 23120341 <23120341@student.hcmus.edu.vn> Date:   2026-11-12 21:26:23 +0700      docs(task1): phan tich ket qua va phan loai bug theo nguyen nhan goc          - Phan bo theo IA / man hinh / muc do; 40/40 muc Failed co bang chung anh     - Phan tich 9 nhom nguyen nhan goc: RC-IMP 60%, RC-FEAT 10%, RC-VIS 7.5%, RC-A11Y 7.5%...     - Phan loai trung thuc: 21 Bug + 2 van de kha dung + 5 de xuat cai tien (khong mo Issue)     - 7 muc PASS co 1 muc (GUI-IA03-003) pass YEU do thieu routing -> phai test lai sau khi sua BUG-008   commit 2972856bb67feb8495d15d708cc95e39223852e3 Author: 23120341 <23120341@student.hcmus.edu.vn> Date:   2026-11-12 21:26:23 +0700      fix(task1): 21 bug report chuan hoa kem anh bang chung          - Moi bug: ID, muc do, mo ta, buoc tai hien, actual vs expected, anh, tac dong nguoi dung,       ghi chu ky thuat, va khoi 'Noi dung san sang post len GitHub Issues'     - 10 Blocker + 11 Major; gom 40 muc Failed theo nguyen nhan goc     - File dinh dang: gui-testing-outputs/bugs/BUG-001.md ... BUG-021.md   commit 902b8ceeebf215b13aa337165eb75044bfab5ad1 Author: 23120341 <23120341@student.hcmus.edu.vn> Date:   2026-11-12 21:26:23 +0700      docs(task1): bao cao tong hop GUI testing va README tu danh giá          - Bao cao 13 muc: tong quan, pham vi, phuong phap, ket qua, nguyen nhan goc, danh sach bug,       phan biet bug/usability/cai tien, cross-browser (ghi trong co chu dich),       han che, de xuat cai tien, phu luc     - README.md: bang tu danh giia HW03 §15 + test summary theo §14     - Cong bo AI: OpenCode + MiniMax M3.1 Flash Free; ranh gioi AI khong danh dau Pass/Fail   commit d7a097d1fb06ae796dc7f74abbc6add9f445544b Author: 23120341 <23120341@student.hcmus.edu.vn> Date:   2026-11-12 21:26:23 +0700      chore(task1): ban Excel checklist, file CSV mau va quan ly tien do          - assets/checklist-gui-testing.xlsx: 3 sheet (Checklist 47x10, Test Summary, Bug List 21)     - 4 file CSV mau de tai hien loi Import CSV (invalid/quoted/vietnamese/sanpham.txt)     - PROGRESS.md: trang thai 7 buoc workflow va danh sach tai lieu con thieu
+HW03 §12: "Create a new Git commit for each step of the testing procedure (for example:
+checklist design, checklist execution, bug logging, each usability session, and the analysis)."
 
-================================================================================
-TOM TAT (commit | author | date | subject)
-================================================================================
+====================================================================================================
+1. DANH SACH COMMIT THEO THU TU THOI GIAN
+====================================================================================================
 
-cada20c|23120341|2026-11-12|init commit aaa5d47|23120341|2026-11-12|docs(task1): chot pham vi kiem thu GUI cho phan he Web Admin EShop b50a71a|23120341|2026-11-12|docs(task1): phan tich giao dien Web Admin tu source code va runtime 7494db3|23120341|2026-11-12|feat(task1): checklist GUI 47 muc theo 4 interface aspects df34dfb|23120341|2026-11-12|test(task1): thuc thi checklist tren SUT that - 47/47 muc, 40 failed 4fa5c65|23120341|2026-11-12|docs(task1): phan tich ket qua va phan loai bug theo nguyen nhan goc 2972856|23120341|2026-11-12|fix(task1): 21 bug report chuan hoa kem anh bang chung 902b8ce|23120341|2026-11-12|docs(task1): bao cao tong hop GUI testing va README tu danh giá d7a097d|23120341|2026-11-12|chore(task1): ban Excel checklist, file CSV mau va quan ly tien do
+#   COMMIT     NGAY         TAAC GI     NOI DUNG COMMIT
+----------------------------------------------------------------------------------------------------
+1   cada20c    2026-11-12   23120341    init commit
+2   aaa5d47    2026-11-12   23120341    docs(task1): chot pham vi kiem thu GUI cho phan he Web Admin EShop
+3   b50a71a    2026-11-12   23120341    docs(task1): phan tich giao dien Web Admin tu source code va runtime
+4   7494db3    2026-11-12   23120341    feat(task1): checklist GUI 47 muc theo 4 interface aspects
+5   df34dfb    2026-11-12   23120341    test(task1): thuc thi checklist tren SUT that - 47/47 muc, 40 failed
+6   4fa5c65    2026-11-12   23120341    docs(task1): phan tich ket qua va phan loai bug theo nguyen nhan goc
+7   2972856    2026-11-12   23120341    fix(task1): 21 bug report chuan hoa kem anh bang chung
+8   902b8ce    2026-11-12   23120341    docs(task1): bao cao tong hop GUI testing va README tu danh giá
+9   d7a097d    2026-11-12   23120341    chore(task1): ban Excel checklist, file CSV mau va quan ly tien do
+10  474e7a7    2026-11-12   23120341    docs(task1): them file git commit log dang text theo yeu cau HW03 §12
+11  c0c7bf3    2026-11-12   23120341    docs(task1): bo sung chi muc GitHub Issues va luong dan truy cap anh trong README
+12  586a910    2026-11-12   23120341    docs(task1): them AI Audit Report va tom tat 8 loi AI cua phien lam viec
+13  5634049    2026-11-13   23120341    docs(task2): add usability testing outputs and integration of 7 participant sessions, analysis, heuristic findings, severity assessment, improvements and usability report
+14  a19a2aa    2026-11-13   23120341    docs: update README for Task 1 and Task 2 completion
+15  37e3c29    2026-11-14   23120341    docs(task2): bo sung 7 file ghi chu phiEN P01-P07 theo mau TEMPLATE-session-notes
+16  2bb2643    2026-11-14   23120341    docs(task1+2): them goi nop Submit - bao cao chinh, bug report kem anh GitHub Issues, AI audit report
+17  1ee1b76    2026-11-14   23120341    docs(task2): them goi bang chung 7 phien usability, Excel checklist va test summary
+18  3432bc3    2026-11-14   23120341    docs: cap nhat git commit log day du theo HW03 §12 (17 commit, kem bang commit -> buoc kiem thu)
 
-================================================================================
-THONG KE FILE THEO COMMIT
-================================================================================
+====================================================================================================
+2. CHI TIET TUNG COMMIT (message day du)
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+commit cada20c5a786348e60cb50aea9db7d7eeefb82eb
+Author: 23120341 <23120341@student.hcmus.edu.vn>
+Date:   2026-11-12 20:55:43 +0700
+
+    init commit
+
+----------------------------------------------------------------------------------------------------
+commit aaa5d479d805ff7da2db5d14dcbc00a2bef4d0e7
+Author: 23120341 <23120341@student.hcmus.edu.vn>
+Date:   2026-11-12 21:26:22 +0700
+
+    docs(task1): chot pham vi kiem thu GUI cho phan he Web Admin EShop
+        - 5 man hinh / luong: Admin Login, Dashboard, Danh muc, San pham (CRUD), Import CSV
+        - Tieu chuan: 4 Interface Aspects (IA-01 -> IA-04)
+        - Ghi nhan mau thuan mat khau admin giua README.md va setup_guide.md
+        - Ghi nhan 3 man hinh ngoai pham vi (Ma Giam Gia, Don hang, Nguoi dung)
+
+----------------------------------------------------------------------------------------------------
+commit b50a71a3d210981a5d9fdee465f879a816ea1200
+Author: 23120341 <23120341@student.hcmus.edu.vn>
+Date:   2026-11-12 21:26:22 +0700
+
+    docs(task1): phan tich giao dien Web Admin tu source code va runtime
+        - Doc 922 dong src/App.jsx: 1 component, state activeTab, khong co routing
+        - Khao sat runtime bang Chrome DevTools Protocol:
+          * do WCAG contrast ratio (placeholder 2.35:1, nut Sua 1.92:1, nut Xoa 3.76:1)
+          * dem <label>/<h1>/aria/landmark (deu = 0)
+          * do chuoi diem dung focus khi Tab (0/7 muc menu)
+          * mo phong viewport 375px/768px (cot KPI con 19.5px)
+          * kiem tra prefers-color-scheme: dark va dir=rtl
+          * parse CSV that (quoted.csv, invalid.csv) de quan sat hanh vi import
+
+----------------------------------------------------------------------------------------------------
+commit 7494db3ae73d843be61d7a9c552e19fbaaf799d6
+Author: 23120341 <23120341@student.hcmus.edu.vn>
+Date:   2026-11-12 21:26:22 +0700
+
+    feat(task1): checklist GUI 47 muc theo 4 interface aspects
+        - IA-01 General UI (13) | IA-02 Forms (12) | IA-03 Navigation (9) | IA-04 Feedback/State (13)
+        - Moi muc: ID, tieu chi kiem chung kha quan, ket qua mong doi, cach kiem chung, muc do
+        - Vong review v1 (67 muc) -> v2 (77 muc, AI tu bo sung 10 muc kem ma ly do 'AI bo sot')
+          -> v3 (47 muc) theo yeu cau nguoi hoc: bo FR-21..24, rut gon 8 nhom muc trung lap
+
+----------------------------------------------------------------------------------------------------
+commit df34dfb512a75745b25ebb649bc75c5cfd0f656c
+Author: 23120341 <23120341@student.hcmus.edu.vn>
+Date:   2026-11-12 21:26:23 +0700
+
+    test(task1): thuc thi checklist tren SUT that - 47/47 muc, 40 failed
+        - 7 Passed / 40 Failed (pass rate 14.9%), 0 muc bo qua
+        - IA-04 fail 100% (13/13) - khong co loading / empty state / success toast / inline error
+        - 55 anh bang chung cho 40 muc Failed, tat ca da overlay 23120341@student.hcmus.edu.vn
+        - Moi muc Failed deu co ghi chu kem so do dinh luong (contrast ratio, so phan tu DOM, pixel)
+
+----------------------------------------------------------------------------------------------------
+commit 4fa5c65c90bd6cd8f1ca0056fe993533cc890710
+Author: 23120341 <23120341@student.hcmus.edu.vn>
+Date:   2026-11-12 21:26:23 +0700
+
+    docs(task1): phan tich ket qua va phan loai bug theo nguyen nhan goc
+        - Phan bo theo IA / man hinh / muc do; 40/40 muc Failed co bang chung anh
+        - Phan tich 9 nhom nguyen nhan goc: RC-IMP 60%, RC-FEAT 10%, RC-VIS 7.5%, RC-A11Y 7.5%...
+        - Phan loai trung thuc: 21 Bug + 2 van de kha dung + 5 de xuat cai tien (khong mo Issue)
+        - 7 muc PASS co 1 muc (GUI-IA03-003) pass YEU do thieu routing -> phai test lai sau khi sua BUG-008
+
+----------------------------------------------------------------------------------------------------
+commit 2972856bb67feb8495d15d708cc95e39223852e3
+Author: 23120341 <23120341@student.hcmus.edu.vn>
+Date:   2026-11-12 21:26:23 +0700
+
+    fix(task1): 21 bug report chuan hoa kem anh bang chung
+        - Moi bug: ID, muc do, mo ta, buoc tai hien, actual vs expected, anh, tac dong nguoi dung,
+          ghi chu ky thuat, va khoi 'Noi dung san sang post len GitHub Issues'
+        - 10 Blocker + 11 Major; gom 40 muc Failed theo nguyen nhan goc
+        - File dinh dang: gui-testing-outputs/bugs/BUG-001.md ... BUG-021.md
+
+----------------------------------------------------------------------------------------------------
+commit 902b8ceeebf215b13aa337165eb75044bfab5ad1
+Author: 23120341 <23120341@student.hcmus.edu.vn>
+Date:   2026-11-12 21:26:23 +0700
+
+    docs(task1): bao cao tong hop GUI testing va README tu danh giá
+        - Bao cao 13 muc: tong quan, pham vi, phuong phap, ket qua, nguyen nhan goc, danh sach bug,
+          phan biet bug/usability/cai tien, cross-browser (ghi trong co chu dich),
+          han che, de xuat cai tien, phu luc
+        - README.md: bang tu danh giia HW03 §15 + test summary theo §14
+        - Cong bo AI: OpenCode + MiniMax M3.1 Flash Free; ranh gioi AI khong danh dau Pass/Fail
+
+----------------------------------------------------------------------------------------------------
+commit d7a097d1fb06ae796dc7f74abbc6add9f445544b
+Author: 23120341 <23120341@student.hcmus.edu.vn>
+Date:   2026-11-12 21:26:23 +0700
+
+    chore(task1): ban Excel checklist, file CSV mau va quan ly tien do
+        - assets/checklist-gui-testing.xlsx: 3 sheet (Checklist 47x10, Test Summary, Bug List 21)
+        - 4 file CSV mau de tai hien loi Import CSV (invalid/quoted/vietnamese/sanpham.txt)
+        - PROGRESS.md: trang thai 7 buoc workflow va danh sach tai lieu con thieu
+
+----------------------------------------------------------------------------------------------------
+commit 474e7a733050b7af1ba5cbf4673a2a406ba5454b
+Author: 23120341 <23120341@student.hcmus.edu.vn>
+Date:   2026-11-12 21:41:49 +0700
+
+    docs(task1): them file git commit log dang text theo yeu cau HW03 §12
+
+----------------------------------------------------------------------------------------------------
+commit c0c7bf3ef41e2b00181625bc2f18b4b3b6dad0a7
+Author: 23120341 <23120341@student.hcmus.edu.vn>
+Date:   2026-11-12 21:44:01 +0700
+
+    docs(task1): bo sung chi muc GitHub Issues va luong dan truy cap anh trong README
+
+----------------------------------------------------------------------------------------------------
+commit 586a9104b5a08838a551d56278765e004f4ac1f6
+Author: 23120341 <23120341@student.hcmus.edu.vn>
+Date:   2026-11-12 21:57:03 +0700
+
+    docs(task1): them AI Audit Report va tom tat 8 loi AI cua phien lam viec
+        - ai-audit-outputs/conversation-2026-11-12-1941-kiem-thu-gui-eshop-admin.md
+          log 7 luot tuong tac day du (tool / thoi gian / prompt nguyen van / output),
+          kem phan danh gia va chinh sua cua nguoi hoc
+        - ai-audit-outputs/mistakes-2026-11-12-1941-kiem-thu-gui-eshop-admin.md
+          8 loi AI theo ma M1/M2/M3/M6/M8, kem phan 'AI khong the thuc hien'
+        - ai-audit-outputs/PROGRESS.md: chi muc phien, trang thai tong hop, checklist chat luong
+        - Cap nhat bao cao §12 va README §5 tro toi file thuc te
+
+----------------------------------------------------------------------------------------------------
+commit 5634049fbd29ed62fdc34682565f45613e99ad3e
+Author: 23120341 <23120341@student.hcmus.edu.vn>
+Date:   2026-11-13 16:58:34 +0700
+
+    docs(task2): add usability testing outputs and integration of 7 participant sessions, analysis, heuristic findings, severity assessment, improvements and usability report
+
+----------------------------------------------------------------------------------------------------
+commit a19a2aa88761ebb8e2c6048831b5245152fe2548
+Author: 23120341 <23120341@student.hcmus.edu.vn>
+Date:   2026-11-13 17:11:16 +0700
+
+    docs: update README for Task 1 and Task 2 completion
+
+----------------------------------------------------------------------------------------------------
+commit 37e3c2946d46b04e6f120419e797c1654055bbb1
+Author: 23120341 <23120341@student.hcmus.edu.vn>
+Date:   2026-11-14 16:38:55 +0700
+
+    docs(task2): bo sung 7 file ghi chu phiEN P01-P07 theo mau TEMPLATE-session-notes
+
+----------------------------------------------------------------------------------------------------
+commit 2bb26433a269e54182f837415e6f385b206c1e86
+Author: 23120341 <23120341@student.hcmus.edu.vn>
+Date:   2026-11-14 16:38:56 +0700
+
+    docs(task1+2): them goi nop Submit - bao cao chinh, bug report kem anh GitHub Issues, AI audit report
+
+----------------------------------------------------------------------------------------------------
+commit 1ee1b7690ed6b093889f2ffe0cd9fc97ad7f4f13
+Author: 23120341 <23120341@student.hcmus.edu.vn>
+Date:   2026-11-14 16:38:56 +0700
+
+    docs(task2): them goi bang chung 7 phien usability, Excel checklist va test summary
+
+----------------------------------------------------------------------------------------------------
+commit 3432bc3c09838170cfce8b930b0a10a476c98ece
+Author: 23120341 <23120341@student.hcmus.edu.vn>
+Date:   2026-11-14 16:40:22 +0700
+
+    docs: cap nhat git commit log day du theo HW03 §12 (17 commit, kem bang commit -> buoc kiem thu)
+
+
+====================================================================================================
+3. COMMIT → BUOC KIEM THU (HW03 §12)
+====================================================================================================
+
+cada20c  Khởi động
+    Khởi tạo repository bài làm
+
+aaa5d47  Task 1 · Bước 1 — Phân tích phạm vi
+    Chốt 5 màn hình / luồng + 2 nhóm khung chung; chốt tiêu chuẩn 4 IA; ghi nhận mâu thuẫn credential trong tài liệu SUT; đánh dấu 3 màn hình ngoài phạm vi
+
+b50a71a  Task 1 · Bước 2 — Phân tích giao diện
+    Đọc 922 dòng src/App.jsx + khảo sát runtime bằng Chrome DevTools Protocol (contrast WCAG, đếm DOM, focus order, viewport 375/768px, dark mode, RTL, parse CSV)
+
+7494db3  Task 1 · Bước 3–4 — Thiết kế & review checklist
+    Checklist 47 mục theo 4 Interface Aspects; vòng review v1 (67) → v2 (77, AI tự bổ sung 10 mục kèm mã lý do) → v3 (47) theo yêu cầu người học
+
+df34dfb  Task 1 · Bước 5 — Thực thi checklist trên SUT thật
+    47/47 mục; 7 Passed / 40 Failed (pass rate 14,9%); 55 ảnh bằng chứng có overlay email sinh viên; mọi mục Failed đều có ghi chú kèm số đo
+
+4fa5c65  Task 1 · Bước 6a — Phân tích kết quả
+    Phân bổ theo IA / màn hình / mức độ; 9 nhóm nguyên nhân gốc (RC-IMP 60%); phân loại trung thực 21 Bug + 2 vấn đề khả dụng + 5 đề xuất cải tiến
+
+2972856  Task 1 · Bước 6b — Chuẩn hoá bug report
+    21 bug report chuẩn hoá (10 Blocker + 11 Major) kèm bước tái hiện, ảnh và khối 'Nội dung post GitHub Issues'
+
+902b8ce  Task 1 · Bước 7 — Báo cáo GUI tổng hợp
+    Báo cáo 13 mục + README tự đánh giá HW03 §15 + test summary §14
+
+d7a097d  Task 1 · Hỗ trợ — Excel & dữ liệu mẫu
+    checklist-gui-testing.xlsx (3 sheet) + 4 file CSV mẫu để tái hiện lỗi Import CSV + PROGRESS.md
+
+474e7a7  HW03 §12 — Git commit log
+    Tạo file git-commit-log.txt dạng text theo yêu cầu HW03 §12
+
+c0c7bf3  Task 1 — Chỉ mục Issues
+    Bổ sung chỉ mục GitHub Issues và luồng dẫn truy cập ảnh trong README (repo lúc đó đang private)
+
+586a910  HW03 §9 — AI Audit Report
+    Thêm AI Audit Report và tóm tắt 8 lỗi AI của 2 phiên làm việc
+
+5634049  Task 2 — Toàn bộ usability testing
+    Kế hoạch, kịch bản, bảng hỏi, tổng hợp 7 phiên, heuristic, severity, đề xuất cải tiến, usability report
+
+a19a2aa  Task 1 + Task 2 — README
+    Cập nhật README sau khi hoàn tất Task 1 và Task 2
+
+37e3c29  Task 2 — Ghi chú phiên
+    Bổ sung 7 file ghi chú phiên P01–P07 theo mẫu TEMPLATE-session-notes.md
+
+2bb2643  HW03 §14 — Gói nộp (báo cáo + bug)
+    Báo cáo chính (MD + PDF) kèm 55 ảnh bằng chứng; bug report 23 lỗi kèm 23 ảnh chụp trang GitHub Issues; AI Audit Report + AI Critique (MD + PDF)
+    File:
+      + submit/main_report/HW03_GUI_Usability_Main_Report.md
+      + submit/main_report/HW03_GUI_Usability_Main_Report.pdf
+      + submit/main_report/screenshots/ (55 ảnh)
+      + submit/bug_report/HW03_Bug_Report.md
+      + submit/bug_report/screenshots/ (23 ảnh GitHub Issues)
+      + submit/ai_audit_report/ (MD + PDF × 2)
+
+1ee1b76  HW03 §14 — Gói nộp (bằng chứng + checklist)
+    Bằng chứng 7 phiên usability (kịch bản, bảng điểm SUS/UEQ-S, bảng 7 người tham gia, 7 ghi chú phiên, severity-ranked findings); Excel checklist + test summary; README gói nộp
+    File:
+      + submit/usability_session_evidence/ (12 tệp + 8 ghi chú phiên)
+      + submit/checklist/checklist-gui-testing.xlsx
+      + submit/checklist/test-summary.md
+      + submit/README.md
+      + submit/git-commit-log.txt
+
+3432bc3  —
+    
+
+====================================================================================================
+4. THONG KE FILE THEO COMMIT
+====================================================================================================
+
+--- cada20c ---
+cada20c init commit
+A	README.md
 
 --- aaa5d47 ---
 aaa5d47 docs(task1): chot pham vi kiem thu GUI cho phan he Web Admin EShop
@@ -33,65 +307,12 @@ M	gui-testing-outputs/03-gui-checklist.md
 A	gui-testing-outputs/screenshots/GUI-IA01-001.png
 A	gui-testing-outputs/screenshots/GUI-IA01-002.png
 A	gui-testing-outputs/screenshots/GUI-IA01-003.png
-A	gui-testing-outputs/screenshots/GUI-IA01-004.png
-A	gui-testing-outputs/screenshots/GUI-IA01-005.png
-A	gui-testing-outputs/screenshots/GUI-IA01-006.png
-A	gui-testing-outputs/screenshots/GUI-IA01-007.png
-A	gui-testing-outputs/screenshots/GUI-IA01-008.png
-A	gui-testing-outputs/screenshots/GUI-IA01-009-375.png
-A	gui-testing-outputs/screenshots/GUI-IA01-009-768.png
-A	gui-testing-outputs/screenshots/GUI-IA01-010.png
-A	gui-testing-outputs/screenshots/GUI-IA01-011.png
-A	gui-testing-outputs/screenshots/GUI-IA01-012.png
-A	gui-testing-outputs/screenshots/GUI-IA01-013.png
-A	gui-testing-outputs/screenshots/GUI-IA02-001.png
-A	gui-testing-outputs/screenshots/GUI-IA02-002.png
-A	gui-testing-outputs/screenshots/GUI-IA02-003.png
-A	gui-testing-outputs/screenshots/GUI-IA02-004.png
-A	gui-testing-outputs/screenshots/GUI-IA02-005.png
-A	gui-testing-outputs/screenshots/GUI-IA02-006.png
-A	gui-testing-outputs/screenshots/GUI-IA02-007.png
-A	gui-testing-outputs/screenshots/GUI-IA02-008.png
-A	gui-testing-outputs/screenshots/GUI-IA02-009.png
-A	gui-testing-outputs/screenshots/GUI-IA02-010-empty.png
-A	gui-testing-outputs/screenshots/GUI-IA02-010-header.png
-A	gui-testing-outputs/screenshots/GUI-IA02-010-txt.png
-A	gui-testing-outputs/screenshots/GUI-IA02-011.png
-A	gui-testing-outputs/screenshots/GUI-IA02-012.png
-A	gui-testing-outputs/screenshots/GUI-IA03-001-deeplink.png
-A	gui-testing-outputs/screenshots/GUI-IA03-001.png
-A	gui-testing-outputs/screenshots/GUI-IA03-002.png
-A	gui-testing-outputs/screenshots/GUI-IA03-003.png
-A	gui-testing-outputs/screenshots/GUI-IA03-004.png
-A	gui-testing-outputs/screenshots/GUI-IA03-005.png
-A	gui-testing-outputs/screenshots/GUI-IA03-006-cancel.png
-A	gui-testing-outputs/screenshots/GUI-IA03-006.png
-A	gui-testing-outputs/screenshots/GUI-IA03-007.png
-A	gui-testing-outputs/screenshots/GUI-IA03-008.png
-A	gui-testing-outputs/screenshots/GUI-IA03-009.png
-A	gui-testing-outputs/screenshots/GUI-IA04-001-network.png
-A	gui-testing-outputs/screenshots/GUI-IA04-001.png
-A	gui-testing-outputs/screenshots/GUI-IA04-002.png
-A	gui-testing-outputs/screenshots/GUI-IA04-003.png
-A	gui-testing-outputs/screenshots/GUI-IA04-004.png
-A	gui-testing-outputs/screenshots/GUI-IA04-005.png
-A	gui-testing-outputs/screenshots/GUI-IA04-006-products.png
-A	gui-testing-outputs/screenshots/GUI-IA04-006.png
-A	gui-testing-outputs/screenshots/GUI-IA04-007-load.png
-A	gui-testing-outputs/screenshots/GUI-IA04-007.png
-A	gui-testing-outputs/screenshots/GUI-IA04-008.png
-A	gui-testing-outputs/screenshots/GUI-IA04-009.png
-A	gui-testing-outputs/screenshots/GUI-IA04-010.png
-A	gui-testing-outputs/screenshots/GUI-IA04-011.png
-A	gui-testing-outputs/screenshots/GUI-IA04-012.png
-A	gui-testing-outputs/screenshots/GUI-IA04-013.png
 A	"gui-testing-outputs/screenshots/ref-danh-m\341\273\245c.png"
-A	gui-testing-outputs/screenshots/ref-dashboard.png
 A	"gui-testing-outputs/screenshots/ref-m\303\243-gi\341\272\243m-gi\303\241.png"
 A	"gui-testing-outputs/screenshots/ref-ng\306\260\341\273\235i-d\303\271ng.png"
-A	gui-testing-outputs/screenshots/ref-san-pham-375px.png
 A	"gui-testing-outputs/screenshots/ref-s\341\272\243n-ph\341\272\251m.png"
 A	"gui-testing-outputs/screenshots/ref-\304\221\306\241n-h\303\240ng.png"
+...	(+ 54 file anh .png nua)
 
 --- 4fa5c65 ---
 4fa5c65 docs(task1): phan tich ket qua va phan loai bug theo nguyen nhan goc
@@ -135,17 +356,121 @@ A	gui-testing-outputs/assets/quoted.csv
 A	gui-testing-outputs/assets/sanpham.txt
 A	gui-testing-outputs/assets/vietnamese.csv
 
-================================================================================
-TONG KET
-================================================================================
+--- 474e7a7 ---
+474e7a7 docs(task1): them file git commit log dang text theo yeu cau HW03 §12
+A	git-commit-log.txt
 
-So commit trong bai nay (khong ke "init commit"):
-  - Task 1 - GUI Checklist : 8 commit (cac buoc #1 -> #8 o tren)
-  - Task 2 - Usability    : 0 commit (chua thuc hien)
-  - Task 3 - Cross-browser: 0 commit (chua thuc hien)
+--- c0c7bf3 ---
+c0c7bf3 docs(task1): bo sung chi muc GitHub Issues va luong dan truy cap anh trong README
+M	README.md
+A	gui-testing-outputs/issue-urls.txt
 
-Trang thai tai thoi diem tao file nay:
-  - 47/47 muc checklist da thuc thi   (7 Passed, 40 Failed, pass rate 14.9%)
-  - 55 anh bang chung, da overlay email 23120341@student.hcmus.edu.vn
-  - 21 bug report, da mo 21 GitHub Issues kem anh dinh kem
-  - Excel checklist: gui-testing-outputs/assets/checklist-gui-testing.xlsx
+--- 586a910 ---
+586a910 docs(task1): them AI Audit Report va tom tat 8 loi AI cua phien lam viec
+M	README.md
+A	ai-audit-outputs/PROGRESS.md
+A	ai-audit-outputs/conversation-2026-11-12-1941-kiem-thu-gui-eshop-admin.md
+A	ai-audit-outputs/mistakes-2026-11-12-1941-kiem-thu-gui-eshop-admin.md
+
+--- 5634049 ---
+5634049 docs(task2): add usability testing outputs and integration of 7 participant sessions, analysis, heuristic findings, severity assessment, improvements and usability report
+A	usability-testing-outputs/01-evaluation-plan.md
+A	usability-testing-outputs/02-task-scenarios.md
+A	usability-testing-outputs/03-questionnaire.md
+A	usability-testing-outputs/04-participant-notes/TEMPLATE-session-notes.md
+A	usability-testing-outputs/04-usability-results-consolidation.md
+A	usability-testing-outputs/05-heuristic-findings.md
+A	usability-testing-outputs/06-severity-assessment.md
+A	usability-testing-outputs/07-improvements.md
+A	usability-testing-outputs/08-usability-report.md
+A	usability-testing-outputs/PROGRESS.md
+A	usability-testing-outputs/README-cho-nguoi-tham-gia.md
+A	usability-testing-outputs/participants/consent-form.md
+A	usability-testing-outputs/participants/participants.md
+A	usability-testing-outputs/pilot-run/check-db.js
+A	usability-testing-outputs/pilot-run/check-price.js
+A	usability-testing-outputs/pilot-run/pilot-dryrun.js
+A	usability-testing-outputs/pilot-run/pilot-log.md
+A	usability-testing-outputs/pilot-run/pilot-report.md
+A	usability-testing-outputs/pilot-run/screenshots/01-login-form.png
+A	usability-testing-outputs/pilot-run/screenshots/08-login-wrong-password.png
+A	usability-testing-outputs/pilot-run/screenshots/11-login-as-normal-user.png
+A	usability-testing-outputs/questionnaire-for-participant.md
+A	usability-testing-outputs/reset-db.ps1
+A	usability-testing-outputs/responses-template.csv
+A	usability-testing-outputs/responses.csv
+...	(+ 13 file anh .png nua)
+
+--- a19a2aa ---
+a19a2aa docs: update README for Task 1 and Task 2 completion
+M	README.md
+
+--- 37e3c29 ---
+37e3c29 docs(task2): bo sung 7 file ghi chu phiEN P01-P07 theo mau TEMPLATE-session-notes
+A	usability-testing-outputs/04-participant-notes/P01-session-notes.md
+A	usability-testing-outputs/04-participant-notes/P02-session-notes.md
+A	usability-testing-outputs/04-participant-notes/P03-session-notes.md
+A	usability-testing-outputs/04-participant-notes/P04-session-notes.md
+A	usability-testing-outputs/04-participant-notes/P05-session-notes.md
+A	usability-testing-outputs/04-participant-notes/P06-session-notes.md
+A	usability-testing-outputs/04-participant-notes/P07-session-notes.md
+
+--- 2bb2643 ---
+2bb2643 docs(task1+2): them goi nop Submit - bao cao chinh, bug report kem anh GitHub Issues, AI audit report
+A	submit/ai_audit_report/HW03_AI_Audit_Report.md
+A	submit/ai_audit_report/HW03_AI_Audit_Report.pdf
+A	submit/ai_audit_report/HW03_AI_Critique.md
+A	submit/ai_audit_report/HW03_AI_Critique.pdf
+A	submit/bug_report/HW03_Bug_Report.md
+A	submit/bug_report/screenshots/github-issue-01.png
+A	submit/bug_report/screenshots/github-issue-02.png
+A	submit/bug_report/screenshots/github-issue-03.png
+A	submit/main_report/HW03_GUI_Usability_Main_Report.md
+A	submit/main_report/HW03_GUI_Usability_Main_Report.pdf
+...	(+ 75 file anh .png nua)
+
+--- 1ee1b76 ---
+1ee1b76 docs(task2): them goi bang chung 7 phien usability, Excel checklist va test summary
+A	submit/README.md
+A	submit/checklist/checklist-gui-testing.xlsx
+A	submit/checklist/test-summary.md
+A	submit/git-commit-log.txt
+A	submit/usability_session_evidence/01-task-scenarios.md
+A	submit/usability_session_evidence/02-evaluation-plan.md
+A	submit/usability_session_evidence/03-questionnaire.md
+A	submit/usability_session_evidence/03-sus-ueq-responses.csv
+A	submit/usability_session_evidence/04-sus-ueq-responses.md
+A	submit/usability_session_evidence/05-participants-table.md
+A	submit/usability_session_evidence/05-session-notes/P01-session-notes.md
+A	submit/usability_session_evidence/05-session-notes/P02-session-notes.md
+A	submit/usability_session_evidence/05-session-notes/P03-session-notes.md
+A	submit/usability_session_evidence/05-session-notes/P04-session-notes.md
+A	submit/usability_session_evidence/05-session-notes/P05-session-notes.md
+A	submit/usability_session_evidence/05-session-notes/P06-session-notes.md
+A	submit/usability_session_evidence/05-session-notes/P07-session-notes.md
+A	submit/usability_session_evidence/05-session-notes/TEMPLATE-session-notes.md
+A	submit/usability_session_evidence/06-heuristic-findings.md
+A	submit/usability_session_evidence/07-severity-ranked-findings.md
+A	submit/usability_session_evidence/08-improvements.md
+A	submit/usability_session_evidence/09-usability-results-consolidation.md
+A	submit/usability_session_evidence/10-consent-form.md
+A	submit/usability_session_evidence/README.md
+A	submit/usability_session_evidence/recordings/README.md
+
+--- 3432bc3 ---
+3432bc3 docs: cap nhat git commit log day du theo HW03 §12 (17 commit, kem bang commit -> buoc kiem thu)
+M	git-commit-log.txt
+
+====================================================================================================
+5. TOM TAT
+====================================================================================================
+
+Tong so commit              : 18
+Commit cho moi buoc kiem thu: co (xem muc 3)
+Task 1 (GUI Checklist)      : 13 commit
+Task 2 (Usability)          :  4 commit (+ 2 commit goi nop)
+Tai lieu dinh kem           : 262 file
+
+====================================================================================================
+END OF GIT COMMIT LOG
+====================================================================================================
