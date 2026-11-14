@@ -5,7 +5,7 @@ Sinh vien   : 23120341 — 23120341@student.hcmus.edu.vn
 Repository  : https://github.com/kiterakun/HW03-GUI-Usability-Testing
 SUT         : eshop-sut/frontend-admin @ commit 85af3ba
 Ngay        : 2026-11-12 → 2026-11-14
-Tong so commit : 19
+Tong so commit : 20
 
 HW03 §12: "Create a new Git commit for each step of the testing procedure (for example:
 checklist design, checklist execution, bug logging, each usability session, and the analysis)."
@@ -35,6 +35,7 @@ checklist design, checklist execution, bug logging, each usability session, and 
 17  1ee1b76    2026-11-14   23120341    docs(task2): them goi bang chung 7 phien usability, Excel checklist va test summary
 18  3432bc3    2026-11-14   23120341    docs: cap nhat git commit log day du theo HW03 §12 (17 commit, kem bang commit -> buoc kiem thu)
 19  6878dbb    2026-11-14   23120341    docs: dong bo ban git commit log vao goi nop Submit
+20  bd43944    2026-11-14   23120341    docs: dong bo ban git commit log moi nhat vao goi nop va repo
 
 ====================================================================================================
 2. CHI TIET TUNG COMMIT (message day du)
@@ -216,6 +217,13 @@ Date:   2026-11-14 16:40:25 +0700
 
     docs: dong bo ban git commit log vao goi nop Submit
 
+----------------------------------------------------------------------------------------------------
+commit bd439442c787590e99e838d76a1e58cfb010c899
+Author: 23120341 <23120341@student.hcmus.edu.vn>
+Date:   2026-11-14 16:40:47 +0700
+
+    docs: dong bo ban git commit log moi nhat vao goi nop va repo
+
 
 ====================================================================================================
 3. COMMIT → BUOC KIEM THU (HW03 §12)
@@ -289,6 +297,9 @@ a19a2aa  Task 1 + Task 2 — README
     
 
 6878dbb  —
+    
+
+bd43944  —
     
 
 ====================================================================================================
@@ -476,15 +487,20 @@ M	git-commit-log.txt
 6878dbb docs: dong bo ban git commit log vao goi nop Submit
 M	submit/git-commit-log.txt
 
+--- bd43944 ---
+bd43944 docs: dong bo ban git commit log moi nhat vao goi nop va repo
+M	git-commit-log.txt
+M	submit/git-commit-log.txt
+
 ====================================================================================================
 5. TOM TAT
 ====================================================================================================
 
-Tong so commit              : 19
+Tong so commit              : 20
 Commit cho moi buoc kiem thu: co (xem muc 3)
 Task 1 (GUI Checklist)      : 13 commit
 Task 2 (Usability)          :  4 commit (+ 2 commit goi nop)
-Tai lieu dinh kem           : 263 file
+Tai lieu dinh kem           : 265 file
 
 ====================================================================================================
 END OF GIT COMMIT LOG
