@@ -1100,7 +1100,7 @@ Mỗi mục **Failed** đều có ít nhất một ảnh chụp màn hình minh 
 | 20 | **BUG-020** | [Quản lý Sản phẩm] Cột “Giá” không có dấu phân cách hàng nghìn | Major | `RC-IMP` | GUI-IA01-010 | [#20](https://github.com/kiterakun/HW03-GUI-Usability-Testing/issues/20) |
 | 21 | **BUG-021** | [Admin Dashboard] Lưới 2 cột KPI bị bóp còn 19,5px mỗi cột ở viewport 375px | Major | `RC-RESP` | GUI-IA01-009 | [#21](https://github.com/kiterakun/HW03-GUI-Usability-Testing/issues/21) |
 
-> Chi tiết đầy đủ (mô tả · bước tái hiện · kết quả thực tế · kết quả mong đợi · ảnh · checklist chất lượng issue · khối “Nội dung post GitHub Issues”) nằm trong **`bug_report/HW03_Bug_Report.md`** và **23 ảnh chụp trang GitHub Issues** trong `bug_report/screenshots/`.
+> Chi tiết đầy đủ (mô tả · bước tái hiện · kết quả thực tế · kết quả mong đợi · ảnh · checklist chất lượng issue · khối “Nội dung post GitHub Issues”) nằm trong **[`bug_report/HW03_Bug_Report.md`](../bug_report/HW03_Bug_Report.md)** và **23 ảnh chụp trang GitHub Issues** trong [`bug_report/screenshots/`](../bug_report/screenshots/).
 
 ### 3.9. Hạn chế của Task 1
 
@@ -1152,7 +1152,7 @@ Mỗi mục **Failed** đều có ít nhất một ảnh chụp màn hình minh 
 | P06 | Ngô Thị Kim Liên | kimngo***@gmail.com | Nhân viên marketing | 25 | Dùng EShop admin vài ngày | Chrome | 2026-11-13 |
 | P07 | Trần Thanh Hưng | tranthanh***@gmail.com | Chủ cửa hàng điện tử | 41 | Quen sàn TMĐT khác | Chrome | 2026-11-13 |
 
-**Đặc tính mẫu:** 100% ngoài lớp HW03 · 100% không thuộc ngành IT/QA · 100% có kinh nghiệm quản lý sản phẩm cơ bản trên nền tảng thương mại điện tử. Bảng đầy đủ kèm văn bản đồng ý nằm tại `usability_session_evidence/02-participants-table.md`.
+**Đặc tính mẫu:** 100% ngoài lớp HW03 · 100% không thuộc ngành IT/QA · 100% có kinh nghiệm quản lý sản phẩm cơ bản trên nền tảng thương mại điện tử. Bảng đầy đủ kèm văn bản đồng ý nằm tại [`usability_session_evidence/02-participants-table.md`](../usability_session_evidence/02-participants-table.md).
 
 ### 4.3. Kịch bản nhiệm vụ
 
@@ -1319,7 +1319,7 @@ Mỗi mục **Failed** đều có ít nhất một ảnh chụp màn hình minh 
 | P06 | 2026-11-13 | Nhân viên marketing | Chrome | completed · 2,5′ | completed_with_help · 4,1′ | **abandoned · 6,0′** | completed · 7,2′ | 26′ | **Dừng task T2** sau 5′ tìm kiếm chức năng Sửa; cần trợ giúp để hiểu nhãn “Delivered” |
 | P07 | 2026-11-13 | Chủ cửa hàng điện tử | Chrome | completed · 1,7′ | completed · 2,7′ | completed_with_help · 4,0′ | completed · 5,0′ | 19′ | Đánh giá theo chuẩn ngành (so với sàn TMĐT khác); nêu thêm yêu cầu chú thích công thức Dashboard |
 
-**Ghi chú từng file ghi chú phiên** (timeline, friction points, trợ giúp, trích dẫn probe) nằm tại `usability_session_evidence/05-session-notes/P01…P07-session-notes.md` — mỗi file theo đúng mẫu `TEMPLATE-session-notes.md`, bổ sung cột **Bằng chứng / Ảnh-video** cho từng điểm nhiễm.
+**Ghi chú từng file ghi chú phiên** (timeline, friction points, trợ giúp, trích dẫn probe) nằm tại [`usability_session_evidence/05-session-notes/P01…P07-session-notes.md`](../usability_session_evidence/05-session-notes/) — mỗi file theo đúng mẫu `TEMPLATE-session-notes.md`, bổ sung cột **Bằng chứng / Ảnh-video** cho từng điểm nhiễm.
 
 ### 4.8. Kết quả định lượng
 
@@ -1642,7 +1642,7 @@ Mỗi mục **Failed** đều có ít nhất một ảnh chụp màn hình minh 
 | Điểm UEQ-S | 3,99/7 (49,9%) |
 | Số phát hiện usability | 8 vấn đề hệ thống · 0 lỗi lẻ |
 | Số ảnh bằng chứng | 55 ảnh checklist + 23 ảnh GitHub Issues |
-| Số commit | **23** (xem `git-commit-log.txt`) |
+| Số commit | **23** (xem [`git-commit-log.txt`](../git-commit-log.txt)) |
 
 ### 5.3. Kết luận
 
@@ -1675,7 +1675,7 @@ Mỗi mục **Failed** đều có ít nhất một ảnh chụp màn hình minh 
 | 3 | Lỗi giả định tính năng trong kịch bản | AI đưa yêu cầu “sửa danh mục” vào **tiêu chí thành công** khi UI không hỗ trợ | TCR bị lệch, đánh giá sai năng lực người dùng | Phát hiện qua dry-run; tách bạch khoảng trống chức năng (chỉ số phụ) khỏi TCR |
 | 4 | Lỗi tham chiếu ảnh trong GitHub Issues | Dùng URL `raw.githubusercontent` khi repo để private → ảnh không hiển thị | Ảnh trong issue bị lỗi hiển thị | Bổ sung khối fallback + hướng dẫn mở file tương đối trong repo; repo hiện đã **public** nên ảnh hiển thị trực tiếp |
 
-> Bản **AI Audit Report đầy đủ** (kèm nhật ký prompt/output từng phiên và danh sách lỗi chi tiết) nằm ở `ai_audit_report/HW03_AI_Audit_Report.md` và `.pdf`. Đoạn **AI Critique 200–300 từ** nằm ở `ai_audit_report/HW03_AI_Critique.md` và `.pdf`.
+> Bản **AI Audit Report đầy đủ** (kèm nhật ký prompt/output từng phiên và danh sách lỗi chi tiết) nằm ở [`ai_audit_report/HW03_AI_Audit_Report.md`](../ai_audit_report/HW03_AI_Audit_Report.md) và `.pdf`. Đoạn **AI Critique 200–300 từ** nằm ở [`ai_audit_report/HW03_AI_Critique.md`](../ai_audit_report/HW03_AI_Critique.md) và `.pdf`.
 
 ---
 
@@ -1688,14 +1688,14 @@ Mỗi mục **Failed** đều có ít nhất một ảnh chụp màn hình minh 
 | 1 | `main_report/HW03_GUI_Usability_Main_Report.md` | Báo cáo chính — Task 1 + Task 2 (file này) | §14 · Markdown + PDF |
 | 2 | `main_report/HW03_GUI_Usability_Main_Report.pdf` | Bản PDF của báo cáo chính | §14 |
 | 3 | `main_report/screenshots/` | 55 ảnh bằng chứng cho 40 mục checklist Failed + 7 mục Passed | §14 |
-| 4 | `bug_report/HW03_Bug_Report.md` | Bug report 23 lỗi (21 Task 1 + 2 Task 2) | §14 |
-| 5 | `bug_report/screenshots/` | 23 ảnh chụp trang GitHub Issues | §14 |
-| 6 | `ai_audit_report/HW03_AI_Audit_Report.md` + `.pdf` | AI Audit Report | §9 |
-| 7 | `ai_audit_report/HW03_AI_Critique.md` + `.pdf` | AI Critique 200–300 từ | §10 |
-| 8 | `usability_session_evidence/` | Bằng chứng 7 phiên (kịch bản, ghi chú phiên, SUS/UEQ-S, severity, participants) | §14 |
+| 4 | [`bug_report/HW03_Bug_Report.md`](../bug_report/HW03_Bug_Report.md) | Bug report 23 lỗi (21 Task 1 + 2 Task 2) | §14 |
+| 5 | [`bug_report/screenshots/`](../bug_report/screenshots/) | 23 ảnh chụp trang GitHub Issues | §14 |
+| 6 | [`ai_audit_report/HW03_AI_Audit_Report.md`](../ai_audit_report/HW03_AI_Audit_Report.md) + `.pdf` | AI Audit Report | §9 |
+| 7 | [`ai_audit_report/HW03_AI_Critique.md`](../ai_audit_report/HW03_AI_Critique.md) + `.pdf` | AI Critique 200–300 từ | §10 |
+| 8 | [`usability_session_evidence/`](../usability_session_evidence/) | Bằng chứng 7 phiên (kịch bản, ghi chú phiên, SUS/UEQ-S, severity, participants) | §14 |
 | 9 | `checklist/checklist-gui-testing.xlsx` | Excel checklist 47 mục (3 sheet: Checklist / Test Summary / Bug List) | §14 |
 | 10 | `checklist/test-summary.md` | Test summary bằng văn bản | §14 |
-| 11 | `git-commit-log.txt` | Nhật ký git commit dạng text | §12 |
+| 11 | [`git-commit-log.txt`](../git-commit-log.txt) | Nhật ký git commit dạng text | §12 |
 | 12 | `README.md` | Bảng tự đánh giá + test summary | §14 |
 
 ### 7.2. Danh sách GitHub Issues
@@ -1754,7 +1754,7 @@ Repository: **https://github.com/kiterakun/HW03-GUI-Usability-Testing/issues**
 
 ### 7.5. Nhật ký Git commit
 
-HW03 §12 yêu cầu **một commit cho mỗi bước của quy trình kiểm thử**. Nhật ký đầy đủ (**23 commit**, từ `init commit` đến commit hiện tại) nằm ở **`git-commit-log.txt`**.
+HW03 §12 yêu cầu **một commit cho mỗi bước của quy trình kiểm thử**. Nhật ký đầy đủ (**23 commit**, từ `init commit` đến commit hiện tại) nằm ở [**[`git-commit-log.txt`](../git-commit-log.txt)**](../git-commit-log.txt).
 
 | # | Commit | Bước kiểm thử | Nội dung |
 |---:|---|---|---|
@@ -1792,7 +1792,7 @@ HW03 §12 yêu cầu **một commit cho mỗi bước của quy trình kiểm th
 | Phần đã làm trong Task 3 | Viewport responsive được kiểm thử bằng DevTools (375×667, 768×1024) và mô phỏng zoom 200% → đây là kiểm thử **responsive trong cùng một trình duyệt**, **không phải** cross-platform. |
 | Ảnh cross-platform | ❌ Không có. |
 | Ảnh overlay email sinh viên | ✅ Có — **55 ảnh bằng chứng checklist** đều có overlay `23120341 · 23120341@student.hcmus.edu.vn`; 23 ảnh GitHub Issues cũng hiển thị overlay này trong nội dung issue. |
-| Hệ quả đối với điểm số | Task 3 (20 điểm) **không được tính**; tự đánh giá tổng = **80/100** (xem bảng tự đánh giá trong `README.md`). |
+| Hệ quả đối với điểm số | Task 3 (20 điểm) **không được tính**; tự đánh giá tổng = **80/100** (xem bảng tự đánh giá trong [`README.md`](../README.md)). |
 
 ### 7.7. Ghi nhận các hạn chế và việc chưa làm
 
